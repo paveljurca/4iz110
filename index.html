@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="xjurp20@vse.cz" />
+<title>HTTP relace</title>
+<style>
+body{margin: 0; padding: 0;}
+#wrapper{width: 94%; margin: 1em 3%; font: normal lighter 1.2em sans-serif;}
+h1{display: inline-block; margin: 0; font: normal bolder 1.6em serif; color: #ff0033; border-bottom: 2px dotted black;}
+input[type=url]{padding: .6em;}
+input[type=submit]{color: #ff0033;}
+form{margin: 1em 0;}
+form>*{margin-right: .2em; padding: .2em; font: italic lighter 1em monospace;}
+iframe{width: 100%;}
+</style>
+<script>
+  //kdyz POST, pridej obsah
+  function if_post() {
+    if (document.getElementById('method').value.match(/POST/i)) {
+      var _prompt = window.prompt("zadej obsah dotazu:", "");
+      if (_prompt != null) {
+        document.getElementById('data').value = _prompt;
+        return true;
+      }
+      return false;
+    }
+  }
+  //uprav vysku iframe
+  function resize(frm) {
+    /*
+    http://stackoverflow.com/questions/819416/adjust-width-height-of-iframe-to-fit-with-content-in-it
+    */
+    frm.height = frm.height.contentWindow.document.body.scrollHeight + "px";
+    //window.alert("test");
+  }
+</script>
+</head>
+<body>
+<div id="wrapper">
+<form method="post" action="/cgi-bin/http.cgi" target="frm-dump" onsubmit="return if_post()">
+<!-- URL -->
+<input type="url" name="url" size="40" maxlength="1024" required="required" autocomplete="on" placeholder="URL" value="http://fis.vse.cz" />
+<!-- HTTP method -->
+<select name="method" id="method">
+<option value="GET">GET</option>
+<option value="HEAD" selected="selected">HEAD&nbsp;</option>
+<option value="POST">POST</option>
+</select>
+<!-- HTTP version -->
+<select name="version">
+<option value="HTTP/1.1" selected="selected">HTTP/1.1&nbsp;</option>
+<option value="HTTP/1.0">HTTP/1.0</option>
+</select>
+<!-- ua -->
+<input type="text" name="ua" size="15" maxlength="256" title="User-Agent" placeholder="User-Agent" />
+<!-- referer -->
+<input type="text" name="referer" size="15" maxlength="256" title="Referer" placeholder="Referer" />
+<!-- POST data -->
+<input type="hidden" name="data" id="data" value="" />
+<!-- submit -->
+<span>=>&nbsp;</span><input type="submit" name="submit" value="QUERY" />
+</form>
+<iframe name="frm-dump" id="frm-dump" width="100%" height="200px" marginheight="0" frameborder="0" onload="resize(this);"></iframe>
+</div>
+</body>
+</html>
