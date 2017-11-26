@@ -1,0 +1,364 @@
+Pavel Jurča, xjurp20, var. K2 2012/2013
+
+------------------------------------
+1
+------------------------------------
+
+1. podsit
+	12.142.0.0
+	255.255.192.0
+	12.142.63.255
+2. podsit
+	12.142.64.0
+	255.255.192.0
+	12.142.127.255
+
+
+------------------------------------
+2
+------------------------------------
+
+115.110.0.0
+255.255.0.0
+115.110.255.255
+
+1)4000u+2		/20
+	115.110.0.0
+	255.255.240.0
+	115.110.15.255
+
+2)4000u+2		/20
+	115.110.16.0
+	255.255.240.0
+	115.110.31.255
+
+3)4000u+2		/20
+	115.110.32.0
+	255.255.240.0
+	115.110.47.255
+
+4)2000u+2		/21
+	115.110.48.0
+	255.255.248.0
+	115.110.55.255
+
+5)2000u+2		/21
+	115.110.56.0
+	255.255.248.0
+	115.110.63.255
+
+6)2000u+2		/21
+	115.110.64.0
+	255.255.248.0
+	115.110.71.255
+
+7)500u+2		/23
+	115.110.72.0
+	255.255.254.0
+	115.110.73.255
+
+8)500u+2		/23
+	115.110.74.0
+	255.255.254.0
+	115.110.75.255
+
+9)500u+2		/23
+	115.110.76.0
+	255.255.254.0
+	115.110.77.255
+
+
+ROUTERY
+1)
+	vnitrni		115.110.0.1/20
+	vnejsi		115.110.78.1/16
+2)
+	vnitrni		115.110.16.1/20
+	vnejsi		115.110.78.2/16
+3)
+	vnitrni		115.110.32.1/20
+	vnejsi		115.110.78.3/16
+4)
+	vnitrni		115.110.48.1/21
+	vnejsi		115.110.78.4/16
+5)
+	vnitrni		115.110.56.1/21
+	vnejsi		115.110.78.5/16
+6)
+	vnitrni		115.110.64.1/21
+	vnejsi		115.110.78.6/16
+7)
+	vnitrni		115.110.72.1/23
+	vnejsi		115.110.78.7/16
+8)
+	vnitrni		115.110.74.1/23
+	vnejsi		115.110.78.8/16
+9)
+	vnitrni		115.110.76.1/23
+	vnejsi		115.110.78.9/16
+	
+
+------------------------------------
+3
+------------------------------------
+
+C:\>tracert www.cdu.edu.au
+
+Výpis trasy k thrasher.cdu.edu.au [138.80.128.73]
+s nejvýše 30 směrováními:
+
+  1    < 1 ms    < 1 ms    < 1 ms  ge-jmb0-vl174.net.vse.cz [146.102.175.251]
+  2     1 ms    < 1 ms    < 1 ms  bb-ca65sb-stanice.net.vse.cz [146.102.26.33]
+  3     2 ms     2 ms     2 ms  gezizkov-sce-ca65sb.net.vse.cz [146.102.25.29]
+  4     7 ms    10 ms    11 ms  geruk-gezizkov.pasnet.cz [195.113.68.217]
+  5     1 ms     1 ms     1 ms  bgpruk-geruk.pasnet.cz [195.113.68.151]
+  6     1 ms     1 ms     1 ms  cesnetkcp-bgpruk.pasnet.cz [195.113.69.58]
+  7     1 ms     1 ms     1 ms  cesnet.mx1.pra.cz.geant.net [62.40.124.29]
+  8     8 ms     8 ms     8 ms  ae2.mx1.fra.de.geant.net [62.40.98.53]
+  9   101 ms   101 ms   101 ms  abilene-wash-gw.rt1.fra.de.geant.net [62.40.125.
+18]
+ 10   114 ms   114 ms   114 ms  ae-8.10.rtr.atla.net.internet2.edu [64.57.28.6]
+
+ 11   137 ms   137 ms   137 ms  ae-1.10.rtr.hous.net.internet2.edu [64.57.28.112
+]
+ 12   168 ms   169 ms   168 ms  ae-3.10.rtr.losa.net.internet2.edu [64.57.28.96]
+
+ 13     *        *        *     Vypršel časový limit žádosti.
+ 14   336 ms   335 ms   335 ms  et-1-0-0.bb2.a.syd.aarnet.net.au [202.158.194.10
+9]
+ 15   342 ms   342 ms   342 ms  so-2-1-0.bb1.a.syd.aarnet.net.au [202.158.194.10
+5]
+ 16   366 ms   356 ms   356 ms  so-0-1-0.bb1.a.bne.aarnet.net.au [202.158.194.50
+]
+ 17   356 ms   356 ms   356 ms  ge-0-0-0.bb1.b.bne.aarnet.net.au [202.158.194.21
+4]
+ 18   402 ms   409 ms   409 ms  xe-0-0-0.bb1.a.drw.aarnet.net.au [202.158.194.23
+3]
+ 19   397 ms   397 ms   397 ms  gigabitethernet-0.er1.cdu.cpe.aarnet.net.au [202
+.158.204.156]
+ 20   397 ms   403 ms   397 ms  gw1.er1.cdu.cpe.aarnet.net.au [202.158.204.138]
+
+ 21     *        *        *     Vypršel časový limit žádosti.
+ 22     *        *        *     Vypršel časový limit žádosti.
+ 23   397 ms   397 ms   397 ms  thrasher.cdu.edu.au [138.80.128.73]
+
+Trasování bylo dokončeno.
+
+* NA CESTE MEZI MOU STANICI A SERVEREM ww.cdu.edu.au lezi 22 routeru
+
+
+------------------------------------
+4
+------------------------------------
+
+* Příkaz PING na www.patria-finance.cz [89.233.174.26] s délkou 32 bajtů
+* IP ADRESA serveru www.patria-finance.cz je 89.233.174.26
+
+>C:\>nslookup
+Věchozˇ server:   ipv6jm.vse.cz
+Address:  146.102.167.167
+
+> set type=mx
+> patria-finance.cz
+Server:  ipv6jm.vse.cz
+Address:  146.102.167.167
+
+Neautorizovan  odpovŘÔ:
+patria-finance.cz       MX preference = 100, mail exchanger = mailip1.patria.cz
+patria-finance.cz       MX preference = 200, mail exchanger = mailip2.patria.cz
+
+* PRIMARNI MAILSERVER je mailip1.patria.cz (ma nejnizsi preferenci, tedy nejvyssi prioritu)
+
+------------------------------------
+5
+------------------------------------
+
+C:\>nslookup
+Věchozˇ server:   ipv6jm.vse.cz
+Address:  146.102.167.167
+
+> set type=ns
+> co.uk.
+Server:  ipv6jm.vse.cz
+Address:  146.102.167.167
+
+Neautorizovan  odpovŘÔ:
+co.uk   nameserver = ns2.nic.uk
+co.uk   nameserver = ns1.nic.uk
+co.uk   nameserver = ns5.nic.uk
+co.uk   nameserver = nsb.nic.uk
+co.uk   nameserver = ns7.nic.uk
+co.uk   nameserver = ns4.nic.uk
+co.uk   nameserver = nsc.nic.uk
+co.uk   nameserver = ns6.nic.uk
+co.uk   nameserver = nsa.nic.uk
+co.uk   nameserver = ns3.nic.uk
+co.uk   nameserver = nsd.nic.uk
+> set type=any
+> co.uk.
+Server:  ipv6jm.vse.cz
+Address:  146.102.167.167
+
+Neautorizovan  odpovŘÔ:
+co.uk
+        primary name server = ns1.nic.uk
+        responsible mail addr = hostmaster.nominet.org.uk
+        serial  = 1303068278
+        refresh = 900 (15 mins)
+        retry   = 300 (5 mins)
+        expire  = 2419200 (28 days)
+        default TTL = 10800 (3 hours)
+co.uk   ??? unknown type 46 ???
+co.uk   nameserver = ns6.nic.uk
+co.uk   nameserver = nsd.nic.uk
+co.uk   nameserver = ns2.nic.uk
+co.uk   nameserver = ns1.nic.uk
+co.uk   nameserver = ns4.nic.uk
+co.uk   nameserver = ns7.nic.uk
+co.uk   nameserver = ns3.nic.uk
+co.uk   nameserver = nsb.nic.uk
+co.uk   nameserver = nsa.nic.uk
+co.uk   nameserver = ns5.nic.uk
+co.uk   nameserver = nsc.nic.uk
+co.uk   ??? unknown type 46 ???
+co.uk   ??? unknown type 48 ???
+co.uk   ??? unknown type 46 ???
+co.uk   ??? unknown type 51 ???
+co.uk   ??? unknown type 46 ???
+co.uk   ??? unknown type 65534 ???
+co.uk   ??? unknown type 46 ???
+> set type=ns
+> nic.uk
+Server:  ipv6jm.vse.cz
+Address:  146.102.167.167
+
+Neautorizovan  odpovŘÔ:
+nic.uk  nameserver = ns6.nic.uk
+nic.uk  nameserver = ns2.nic.uk
+nic.uk  nameserver = nsc.nic.uk
+nic.uk  nameserver = ns5.nic.uk
+nic.uk  nameserver = ns7.nic.uk
+nic.uk  nameserver = nsa.nic.uk
+nic.uk  nameserver = nsd.nic.uk
+nic.uk  nameserver = ns3.nic.uk
+nic.uk  nameserver = nsb.nic.uk
+nic.uk  nameserver = ns4.nic.uk
+nic.uk  nameserver = ns1.nic.uk
+
+ns1.nic.uk      internet address = 195.66.240.130
+ns1.nic.uk      AAAA IPv6 address = 2a01:40:1001:35::2
+ns2.nic.uk      internet address = 217.79.164.131
+ns3.nic.uk      internet address = 213.219.13.131
+ns4.nic.uk      internet address = 194.83.244.131
+ns4.nic.uk      AAAA IPv6 address = 2001:630:181:35::83
+ns5.nic.uk      internet address = 213.246.167.131
+ns6.nic.uk      internet address = 213.248.254.130
+ns7.nic.uk      internet address = 212.121.40.130
+nsa.nic.uk      internet address = 156.154.100.3
+nsa.nic.uk      AAAA IPv6 address = 2001:502:ad09::3
+nsb.nic.uk      internet address = 156.154.101.3
+nsc.nic.uk      internet address = 156.154.102.3
+nsd.nic.uk      internet address = 156.154.103.3
+
+*INTERVAL AKTUALIZACE SEK. DNS SERVERU je 15 min
+
+------------------------------------
+6
+------------------------------------
+
+komunikace CISCO routeru se stanici
++ vyhledavani v routovaci tabulce
+
+------------------------------------
+7
+------------------------------------
+
+*METODA GET => ANO!
+
+request:
+GET / HTTP/1.1[CRLF]
+Host: www.cuni.cz[CRLF]
+Connection: close[CRLF]
+User-Agent: Web-sniffer/1.0.46 (+http://web-sniffer.net/)[CRLF]
+Accept-Encoding: gzip[CRLF]
+Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7[CRLF]
+Cache-Control: no-cache[CRLF]
+Accept-Language: de,en;q=0.7,en-us;q=0.3[CRLF]
+Referer: http://web-sniffer.net/[CRLF]
+[CRLF]
+
+response:
+Status: HTTP/1.1 200 OK  
+Date: Wed, 26 Jun 2013 11:16:54 GMT  
+Server: Apache/2.2.3 (CentOS)  
+X-Powered-By: PHP/5.1.6  
+Connection: close  
+Transfer-Encoding: chunked  
+Content-Type: text/html 
+
+*METODA POST => ANO!
+
+request:
+POST / HTTP/1.1[CRLF]
+Host: www.cuni.cz[CRLF]
+Connection: close[CRLF]
+User-Agent: Web-sniffer/1.0.46 (+http://web-sniffer.net/)[CRLF]
+Accept-Encoding: gzip[CRLF]
+Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7[CRLF]
+Cache-Control: no-cache[CRLF]
+Accept-Language: de,en;q=0.7,en-us;q=0.3[CRLF]
+Referer: http://web-sniffer.net/[CRLF]
+Content-type: application/x-www-form-urlencoded[CRLF]
+Content-length:
+
+response:
+Status: HTTP/1.1 200 OK  
+Date: Wed, 26 Jun 2013 11:18:55 GMT  
+Server: Apache/2.2.3 (CentOS)  
+X-Powered-By: PHP/5.1.6  
+Connection: close  
+Transfer-Encoding: chunked  
+Content-Type: text/html 
+
+*METODA HEAD => ANO!
+
+request:
+HEAD / HTTP/1.1[CRLF]
+Host: www.cuni.cz[CRLF]
+Connection: close[CRLF]
+User-Agent: Web-sniffer/1.0.46 (+http://web-sniffer.net/)[CRLF]
+Accept-Encoding: gzip[CRLF]
+Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7[CRLF]
+Cache-Control: no-cache[CRLF]
+Accept-Language: de,en;q=0.7,en-us;q=0.3[CRLF]
+Referer: http://web-sniffer.net/
+
+response:
+Status: HTTP/1.1 200 OK  
+Date: Wed, 26 Jun 2013 11:19:51 GMT  
+Server: Apache/2.2.3 (CentOS)  
+X-Powered-By: PHP/5.1.6  
+Connection: close  
+Content-Type: text/html 
+
+
+*METODA TRACE => ANO!
+
+request:
+TRACE / HTTP/1.1[CRLF]
+Host: www.cuni.cz[CRLF]
+Connection: close[CRLF]
+User-Agent: Web-sniffer/1.0.46 (+http://web-sniffer.net/)[CRLF]
+Accept-Encoding: gzip[CRLF]
+Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7[CRLF]
+Cache-Control: no-cache[CRLF]
+Accept-Language: de,en;q=0.7,en-us;q=0.3[CRLF]
+Referer: http://web-sniffer.net/
+
+response:
+Status: HTTP/1.1 200 OK  
+Date: Wed, 26 Jun 2013 11:20:26 GMT  
+Server: Apache/2.2.3 (CentOS)  
+Connection: close  
+Transfer-Encoding: chunked  
+Content-Type: message/http

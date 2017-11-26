@@ -1,0 +1,2653 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2014.06.17 11:07:04 =~=~=~=~=~=~=~=~=~=~=~=
+login as: xjurp23 0
+xjurp20@4iz110.vse.cz's password: 
+Linux 4iz110 3.2.0-4-amd64 #1 SMP Debian 3.2.46-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have mail.
+Last login: Tue Jun 10 16:02:24 2014 from 2a00:1028:919a:de3a:222:faff:fedb:d46a
+xjurp20@4iz110:~$ w
+ 11:07:12 up 272 days, 19:13,  8 users,  load average: 0.02, 0.04, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+xvavz10  pts/0    jm361h16.unet.vs 10:15   31:28   0.07s  0.07s -bash
+xtrnm15  pts/3    jm361h06.unet.vs 10:23   24.00s  0.11s  0.01s mc
+xborj24  pts/4    jm361h14.unet.vs 10:20   39:52   0.73s  0.66s mc
+pinkas   pts/2    jm361h20.unet.vs 10:20   45:44   0.04s  0.04s -bash
+xbarj104 pts/5    jm361h19.unet.vs 11:02    4:35   0.15s  0.09s mc
+xvavz10  pts/10   jm361h16.unet.vs 10:21   41:52   0.09s  0.09s -bash
+xbarp59  pts/16   jm361h04.unet.vs 10:28   31:44   0.07s  0.07s -bash
+xjurp20  pts/17   jm361h02.unet.vs 11:07    0.00s  0.07s  0.00s w
+xjurp20@4iz110:~$ opeftopp 49ziz22110.vse.cz
+ftp: connect: Connection refused
+ftp> stat
+Not connected.
+No proxy connection.
+Connecting using address family: any.
+Mode: ; Type: ; Form: ; Structure: 
+Verbose: on; Bell: off; Prompting: on; Globbing: on
+Store unique: off; Receive unique: off
+Case: off; CR stripping: on
+Quote control characters: on
+Ntrans: off
+Nmap: off
+Hash mark printing: off; Use of PORT cmds: on
+Tick counter printing: off
+ftp> qquit
+xjurp20@4iz110:~$ ping 4izftop p localhost
+Connected to localhost.
+220 ProFTPD 1.3.4a Server (4IZ110-FTP) [127.0.0.1]
+Name (localhost:xjurp20): Anonymous
+331 Password required for Anonymous
+Password:
+530 Login incorrect.
+Login failed.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> quit
+221 Goodbye.
+xjurp20@4iz110:~$ ftp localhost
+Connected to localhost.
+220 ProFTPD 1.3.4a Server (4IZ110-FTP) [127.0.0.1]
+Name (localhost:xjurp20): qi uit
+331 Password required for quit
+Password:
+530 Login incorrect.
+Login failed.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> 
+ftp> 
+ftp> quit
+221 Goodbye.
+xjurp20@4iz110:~$ pwd
+/home/xjurp20
+xjurp20@4iz110:~$ cdat 
+apache/          .config/         p/               .vim/
+.bash_history    .lesshst         .pinerc          .viminfo
+.bash_logout     .local/          port.txt         vycisti_logy.sh
+.bashrc          mail/            .profile         .w3m/
+.cache/          mbox             uzivatele        
+xjurp20@4iz110:~$ cat ls
+apache  mail  mbox  p  port.txt  uzivatele  vycisti_logy.sh
+xjurp20@4iz110:~$ cat port.txt 
+Vam prideleny port je 40053
+xjurp20@4iz110:~$ mant ftp
+FTP(1)                    BSD General Commands Manual                   FTP(1)
+
+NAME
+     ftp  Internet file transfer program
+
+SYNOPSIS
+     ftp [-46pinegvd] [host [port]]
+     pftp [-46inegvd] [host [port]]
+
+DESCRIPTION
+     Ftp is the user interface to the Internet standard File Transfer Proto
+     col.  The program allows a user to transfer files to and from a remote
+     network site.
+
+     Options may be specified at the command line, or to the command inter
+     preter.
+
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+ Manual page ftp(1) line 1 (press h for help or q to quit) ESCESCOOBB           back to the client machine. Requires that the ftp server support
+ Manual page ftp(1) line 2 (press h for help or q to quit) ESCESCOOBB           the PASV command. This is the default if invoked as pftp.
+ Manual page ftp(1) line 3 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 4 (press h for help or q to quit) ESCESCOOBB     -i    Turns off interactive prompting during multiple file transfers.
+ Manual page ftp(1) line 5 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 6 (press h for help or q to quit) ESCESCOOBB     -n    Restrains ftp from attempting auto-login upon initial connection.
+ Manual page ftp(1) line 7 (press h for help or q to quit) ESCESCOOBB           If auto-login is enabled, ftp will check the .netrc (see netrc(5))
+ Manual page ftp(1) line 8 (press h for help or q to quit) ESCESCOOBB           file in the user's home directory for an entry describing an
+ Manual page ftp(1) line 9 (press h for help or q to quit) ESCESCOOBB           account on the remote machine.  If no entry exists, ftp will prompt
+ Manual page ftp(1) line 10 (press h for help or q to quit) ESCESCOOBB           for the remote machine login name (default is the user identity on
+ Manual page ftp(1) line 11 (press h for help or q to quit) ESCESCOOBB           the local machine), and, if necessary, prompt for a password and an
+ Manual page ftp(1) line 12 (press h for help or q to quit) ESCESCOOBB           account with which to login.
+ Manual page ftp(1) line 13 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 14 (press h for help or q to quit) ESCESCOOBB     -e    Disables command editing and history support, if it was compiled
+ Manual page ftp(1) line 15 (press h for help or q to quit) ESCESCOOBB           into the ftp executable. Otherwise, does nothing.
+ Manual page ftp(1) line 16 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 17 (press h for help or q to quit)
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+           back to the client machine. Requires that the ftp server support
+           the PASV command. This is the default if invoked as pftp.
+
+     -i    Turns off interactive prompting during multiple file transfers.
+
+     -n    Restrains ftp from attempting auto-login upon initial connection.
+           If auto-login is enabled, ftp will check the .netrc (see netrc(5))
+           file in the user's home directory for an entry describing an
+           account on the remote machine.  If no entry exists, ftp will prompt
+           for the remote machine login name (default is the user identity on
+           the local machine), and, if necessary, prompt for a password and an
+           account with which to login.
+
+     -e    Disables command editing and history support, if it was compiled
+           into the ftp executable. Otherwise, does nothing.
+
+     -g    Disables file name globbing.
+
+     -v    Verbose option forces ftp to show all responses from the remote
+           server, as well as report on data transfer statistics.
+
+     -d    Enables debugging.
+
+     The client host and an optional port number with which ftp is to communi
+     cate may be specified on the command line.  If this is done, ftp will
+     immediately attempt to establish a connection to an FTP server on that
+     host; otherwise, ftp will enter its command interpreter and await
+     instructions from the user.  When ftp is awaiting commands from the user
+     the prompt ftp> is provided to the user.  The following commands are
+     recognized by ftp:
+
+     ! [command [args]]
+                 Invoke an interactive shell on the local machine.  If there
+                 are arguments, the first is taken to be a command to execute
+                 directly, with the rest of the arguments as its arguments.
+
+     $ macro-name [args]
+                 Execute the macro macro-name that was defined with the macdef
+                 command.  Arguments are passed to the macro unglobbed.
+
+     account [passwd]
+                 Supply a supplemental password required by a remote system
+                 for access to resources once a login has been successfully
+                 completed.  If no argument is included, the user will be
+                 prompted for an account password in a non-echoing input mode.
+
+     append local-file [remote-file]
+                 Append a local file to a file on the remote machine.  If
+                 remote-file is left unspecified, the local file name is used
+                 in naming the remote file after being altered by any ntrans
+                 or nmap setting.  File transfer uses the current settings for
+                 type, format, mode, and structure.
+ Manual page ftp(1) line 17 (press h for help or q to quit)
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+           back to the client machine. Requires that the ftp server support
+           the PASV command. This is the default if invoked as pftp.
+
+     -i    Turns off interactive prompting during multiple file transfers.
+
+     -n    Restrains ftp from attempting auto-login upon initial connection.
+           If auto-login is enabled, ftp will check the .netrc (see netrc(5))
+           file in the user's home directory for an entry describing an
+           account on the remote machine.  If no entry exists, ftp will prompt
+           for the remote machine login name (default is the user identity on
+           the local machine), and, if necessary, prompt for a password and an
+           account with which to login.
+
+     -e    Disables command editing and history support, if it was compiled
+           into the ftp executable. Otherwise, does nothing.
+
+ Manual page ftp(1) line 17 (press h for help or q to quit)
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ 
+           ments where a firewall prevents connections from the outside worl d
+           back to the client machine. Requires that the ftp server support
+           the PASV command. This is the default if invoked as pftp.
+
+     -i    Turns off interactive prompting during multiple file transfers.
+
+     -n    Restrains ftp from attempting auto-login upon initial connectio n.
+           If auto-login is enabled, ftp will check the .netrc (see netrc(5) )
+           file in the user's home directory for an entry describing an
+           account on the remote machine.  If no entry exists, ftp will prom pt
+           for the remote machine login name (default is the user identity o n
+           the local machine), and, if necessary, prompt for a password and  an
+           account with which to login.
+
+     -e    Disables command editing and history support, if it was compiled
+           into the ftp executable. Otherwise, does nothing.
+
+     -g    Disables file name globbing.
+
+     -v    Verbose option forces ftp to show all responses from the remote
+           server, as well as report on data transfer statistics.
+
+     -d    Enables debugging.
+
+     The client host and an optional port number with which ftp is to commun i
+     cate may be specified on the command line.  If this is done, ftp will
+     immediately attempt to establish a connection to an FTP server on that
+     host; otherwise, ftp will enter its command interpreter and await
+     instructions from the user.  When ftp is awaiting commands from the use r
+     the prompt ftp> is provided to the user.  The following commands are
+     recognized by ftp:
+
+     ! [command [args]]
+                 Invoke an interactive shell on the local machine.  If there
+                 are arguments, the first is taken to be a command to execut e
+                 directly, with the rest of the arguments as its arguments.
+
+     $ macro-name [args]
+                 Execute the macro macro-name that was defined with the macd ef
+                 command.  Arguments are passed to the macro unglobbed.
+
+ Manual page ftp(1) line 17 (press h for help or q to quit) ESCESC[[66~~     account [passwd]
+                 Supply a supplemental password required by a remote system
+                 for access to resources once a login has been successfully
+                 completed.  If no argument is included, the user will be
+                 prompted for an account password in a non-echoing input mod e.
+
+     append local-file [remote-file]
+                 Append a local file to a file on the remote machine.  If
+                 remote-file is left unspecified, the local file name is use d
+                 in naming the remote file after being altered by any ntrans
+                 or nmap setting.  File transfer uses the current settings f or
+                 type, format, mode, and structure.
+
+     ascii       Set the file transfer type to network ASCII.  This is the
+                 default type.
+
+     bell        Arrange that a bell be sounded after each file transfer com 
+                 mand is completed.
+
+     binary      Set the file transfer type to support binary image transfer .
+
+     bye         Terminate the FTP session with the remote server and exit
+                 ftp.  An end of file will also terminate the session and
+                 exit.
+
+     case        Toggle remote computer file name case mapping during mget
+                 commands.  When case is on (default is off), remote compute r
+                 file names with all letters in upper case are written in th e
+                 local directory with the letters mapped to lower case.
+
+     cd remote-directory
+                 Change the working directory on the remote machine to
+                 remote-directory.
+
+     cdup        Change the remote machine working directory to the parent o f
+                 the current remote machine working directory.
+
+     chmod mode file-name
+                 Change the permission modes of the file file-name on the
+                 remote sytem to mode.
+
+     close       Terminate the FTP session with the remote server, and retur n
+                 to the command interpreter.  Any defined macros are erased.
+
+     cr          Toggle carriage return stripping during ascii type file
+                 retrieval.  Records are denoted by a carriage return/linefe ed
+                 sequence during ascii type file transfer.  When cr is on (t he
+ Manual page ftp(1) line 64 (press h for help or q to quit) ESCESC[[66~~                 default), carriage returns are stripped from this sequence  to
+                 conform with the UNIX single linefeed record delimiter.
+                 Records on non-UNIX remote systems may contain single line
+                 feeds; when an ascii type transfer is made, these linefeeds
+                 may be distinguished from a record delimiter only when cr i s
+                 off.
+
+     qc          Toggle the printing of control characters in the output of
+                 ASCII type commands.  When this is turned on, control chara c
+                 ters are replaced with a question mark if the output file i s
+                 the standard output.  This is the default when the standard
+                 output is a tty.
+
+     delete remote-file
+                 Delete the file remote-file on the remote machine.
+
+     debug [debug-value]
+                 Toggle debugging mode.  If an optional debug-value is speci 
+                 fied it is used to set the debugging level.  When debugging
+                 is on, ftp prints each command sent to the remote machine,
+                 preceded by the string -->
+
+     dir [remote-directory] [local-file]
+                 Print a listing of the directory contents in the directory,
+                 remote-directory, and, optionally, placing the output in
+                 local-file.  If interactive prompting is on, ftp will promp t
+                 the user to verify that the last argument is indeed the tar 
+                 get local file for receiving dir output.  If no directory i s
+                 specified, the current working directory on the remote
+                 machine is used.  If no local file is specified, or
+                 local-file is -, output comes to the terminal.
+
+     disconnect  A synonym for close.
+
+     form format
+                 Set the file transfer form to format.  The default format i s
+                 file.
+
+     get remote-file [local-file]
+                 Retrieve the remote-file and store it on the local machine.
+                 If the local file name is not specified, it is given the sa me
+                 name it has on the remote machine, subject to alteration by
+                 the current case, ntrans, and nmap settings.  The current
+                 settings for type, form, mode, and structure are used while
+                 transferring the file.
+
+     glob        Toggle filename expansion for mdelete, mget and mput.  If
+                 globbing is turned off with glob, the file name arguments a  Manual page ftp(1) line 111 (press h for help or q to quit) ESCESC[[66~~re
+                 taken literally and not expanded.  Globbing for mput is don e
+                 as in csh(1).  For mdelete and mget, each remote file name  is
+                 expanded separately on the remote machine and the lists are
+                 not merged.  Expansion of a directory name is likely to be
+                 different from expansion of the name of an ordinary file: t he
+                 exact result depends on the foreign operating system and ft p
+                 server, and can be previewed by doing mls remote-files -
+                 Note: mget and mput are not meant to transfer entire direc
+                 tory subtrees of files.  That can be done by transferring a
+                 tar(1) archive of the subtree (in binary mode).
+
+     hash        Toggle hash-sign (``#'') printing for each data block trans 
+                 ferred.  The size of a data block is 1024 bytes.
+
+     help [command]
+                 Print an informative message about the meaning of command.
+                 If no argument is given, ftp prints a list of the known com 
+                 mands.
+
+     idle [seconds]
+                 Set the inactivity timer on the remote server to seconds se c
+                 onds.  If seconds is omitted, the current inactivity timer  is
+                 printed.
+
+     ipany       Allow the address resolver to return any address family.
+
+     ipv4        Restrict the address resolver to look only for IPv4
+                 addresses.
+
+     ipv6        Restrict host adressing to IPv6 only.
+
+     lcd [directory]
+                 Change the working directory on the local machine.  If no
+                 directory is specified, the user's home directory is used.
+
+     ls [remote-directory] [local-file]
+                 Print a listing of the contents of a directory on the remot e
+                 machine.  The listing includes any system-dependent informa 
+                 tion that the server chooses to include; for example, most
+                 UNIX systems will produce output from the command ls -l.
+                 (See also nlist.)  If remote-directory is left unspecified,
+                 the current working directory is used.  If interactive
+                 prompting is on, ftp will prompt the user to verify that th e
+                 last argument is indeed the target local file for receiving
+                 ls output.  If no local file is specified, or if local-file
+                 is -, the output is sent to the terminal.
+ Manual page ftp(1) line 158 (press h for help or q to quit) ESCESC[[66~~
+     macdef macro-name
+                 Define a macro.  Subsequent lines are stored as the macro
+                 macro-name; a null line (consecutive newline characters in  a
+                 file or carriage returns from the terminal) terminates macr o
+                 input mode.  There is a limit of 16 macros and 4096 total
+                 characters in all defined macros.  Macros remain defined
+                 until a close command is executed.  The macro processor
+                 interprets `$' and `\' as special characters.  A `$' follow ed
+                 by a number (or numbers) is replaced by the corresponding
+                 argument on the macro invocation command line.  A `$' fol
+                 lowed by an `i' signals that macro processor that the execu t
+                 ing macro is to be looped.  On the first pass `$i' is
+                 replaced by the first argument on the macro invocation com
+                 mand line, on the second pass it is replaced by the second
+                 argument, and so on.  A `\' followed by any character is
+                 replaced by that character.  Use the `\' to prevent special
+                 treatment of the `$'.
+
+     mdelete [remote-files]
+                 Delete the remote-files on the remote machine.
+
+     mdir remote-files local-file
+                 Like dir, except multiple remote files may be specified.  I f
+                 interactive prompting is on, ftp will prompt the user to ve r
+                 ify that the last argument is indeed the target local file
+                 for receiving mdir output.
+
+     mget remote-files
+                 Expand the remote-files on the remote machine and do a get
+                 for each file name thus produced.  See glob for details on
+                 the filename expansion.  Resulting file names will then be
+                 processed according to case, ntrans, and nmap settings.
+                 Files are transferred into the local working directory, whi ch
+                 can be changed with lcd directory; new local directories
+                 can be created with ! mkdir directory.
+
+     mkdir directory-name
+                 Make a directory on the remote machine.
+
+     mls remote-files local-file
+                 Like nlist, except multiple remote files may be specified,
+                 and the local-file must be specified.  If interactive promp t
+                 ing is on, ftp will prompt the user to verify that the last
+                 argument is indeed the target local file for receiving mls
+                 output.
+
+     mode [mode-name]
+                 Set the file transfer mode to mode-name.  The default mode  is
+ Manual page ftp(1) line 205 (press h for help or q to quit) ESCESC[[66~~                 stream mode.
+
+     modtime file-name
+                 Show the last modification time of the file on the remote
+                 machine.
+
+     mput local-files
+                 Expand wild cards in the list of local files given as argu
+                 ments and do a put for each file in the resulting list.  Se e
+                 glob for details of filename expansion.  Resulting file nam es
+                 will then be processed according to ntrans and nmap setting s.
+
+     newer file-name [local-file]
+                 Get the file only if the modification time of the remote fi le
+                 is more recent that the file on the current system.  If the
+                 file does not exist on the current system, the remote file  is
+                 considered newer.  Otherwise, this command is identical to
+                 get.
+
+     nlist [remote-directory] [local-file]
+                 Print a  list of the files in a directory on the remote
+                 machine.  If remote-directory is left unspecified, the cur
+                 rent working directory is used.  If interactive prompting i s
+                 on, ftp will prompt the user to verify that the last argume nt
+                 is indeed the target local file for receiving nlist output.
+                 If no local file is specified, or if local-file is -, the
+                 output is sent to the terminal.
+
+     nmap [inpattern outpattern]
+                 Set or unset the filename mapping mechanism.  If no argumen ts
+                 are specified, the filename mapping mechanism is unset.  If
+                 arguments are specified, remote filenames are mapped during
+                 mput commands and put commands issued without a specified
+                 remote target filename.  If arguments are specified, local
+                 filenames are mapped during mget commands and get commands
+                 issued without a specified local target filename.  This com 
+                 mand is useful when connecting to a non-UNIX remote compute r
+                 with different file naming conventions or practices.  The
+                 mapping follows the pattern set by inpattern and outpattern .
+                 [Inpattern] is a template for incoming filenames (which may
+                 have already been processed according to the ntrans and cas e
+                 settings).  Variable templating is accomplished by includin g
+                 the sequences `$1', `$2', ..., `$9' in inpattern.  Use `\'  to
+                 prevent this special treatment of the `$' character.  All
+ Manual page ftp(1) line 254 (press h for help or q to quit) ESCESC[[66~~                 other characters are treated literally, and are used to
+                 determine the nmap [inpattern] variable values.  For exampl e,
+                 given inpattern $1.$2 and the remote file name "mydata.data ",
+                 $1 would have the value "mydata", and $2 would have the val ue
+                 "data".  The outpattern determines the resulting mapped fil e
+                 name.  The sequences `$1', `$2', ...., `$9' are replaced by
+                 any value resulting from the inpattern template.  The
+                 sequence `$0' is replace by the original filename.  Additio n
+                 ally, the sequence [seq1, seq2] is replaced by [seq1] if
+                 seq1 is not a null string; otherwise it is replaced by seq2 .
+                 For example, the command
+
+                       nmap $1.$2.$3 [$1,$2].[$2,file]
+
+                 would yield the output filename "myfile.data" for input fil e
+                 names "myfile.data" and "myfile.data.old", "myfile.file" fo r
+                 the input filename "myfile", and "myfile.myfile" for the
+                 input filename ".myfile".  Spaces may be included in
+                 outpattern, as in the example: `nmap $1 sed "s/  *$//" > $1 '
+                 .  Use the `\' character to prevent special treatment of th e
+                 `$','[','[', and `,' characters.
+
+     ntrans [inchars [outchars]]
+                 Set or unset the filename character translation mechanism.
+                 If no arguments are specified, the filename character trans 
+                 lation mechanism is unset.  If arguments are specified, cha r
+                 acters in remote filenames are translated during mput com
+                 mands and put commands issued without a specified remote ta r
+                 get filename.  If arguments are specified, characters in
+                 local filenames are translated during mget commands and get
+                 commands issued without a specified local target filename.
+                 This command is useful when connecting to a non-UNIX remote
+                 computer with different file naming conventions or practice s.
+                 Characters in a filename matching a character in inchars ar e
+                 replaced with the corresponding character in outchars.  If
+                 the character's position in inchars is longer than the leng th
+                 of outchars, the character is deleted from the file name.
+
+     open host [port]
+                 Establish a connection to the specified host FTP server.  A n
+                 optional port number may be supplied, in which case, ftp wi  Manual page ftp(1) line 298 (press h for help or q to quit) ESCESC[[66~~ll
+                 attempt to contact an FTP server at that port.  If the
+                 auto-login option is on (default), ftp will also attempt to
+                 automatically log the user in to the FTP server (see below) .
+
+     prompt      Toggle interactive prompting.  Interactive prompting occurs
+                 during multiple file transfers to allow the user to selec
+                 tively retrieve or store files.  If prompting is turned off
+                 (default is on), any mget or mput will transfer all files,
+                 and any mdelete will delete all files.
+
+     proxy ftp-command
+                 Execute an ftp command on a secondary control connection.
+                 This command allows simultaneous connection to two remote f tp
+                 servers for transferring files between the two servers.  Th e
+                 first proxy command should be an open, to establish the sec 
+                 ondary control connection.  Enter the command "proxy ?" to
+                 see other ftp commands executable on the secondary connec
+                 tion.  The following commands behave differently when pref
+                 aced by proxy: open will not define new macros during the
+                 auto-login process, close will not erase existing macro def i
+                 nitions, get and mget transfer files from the host on the
+                 primary control connection to the host on the secondary con 
+                 trol connection, and put, mput, and append transfer files
+                 from the host on the secondary control connection to the ho st
+                 on the primary control connection.  Third party file trans
+                 fers depend upon support of the ftp protocol PASV command b y
+                 the server on the secondary control connection.
+
+     put local-file [remote-file]
+                 Store a local file on the remote machine.  If remote-file i s
+                 left unspecified, the local file name is used after process 
+                 ing according to any ntrans or nmap settings in naming the
+                 remote file.  File transfer uses the current settings for
+                 type, format, mode, and structure.
+
+     pwd         Print the name of the current working directory on the remo te
+                 machine.
+
+     quit        A synonym for bye.
+
+     quote arg1 arg2 ...
+                 The arguments specified are sent, verbatim, to the remote F TP
+                 server.
+
+     recv remote-file [local-file]
+ Manual page ftp(1) line 338 (press h for help or q to quit) ESCESC[[66~~                 A synonym for get.
+
+     reget remote-file [local-file]
+                 Reget acts like get, except that if local-file exists and i s
+                 smaller than remote-file, local-file is presumed to be a pa r
+                 tially transferred copy of remote-file and the transfer is
+                 continued from the apparent point of failure.  If local-fil e
+                 does not exist ftp won't fetch the file.  This command is
+                 useful when transferring very large files over networks tha t
+                 are prone to dropping connections.
+
+     remotehelp [command-name]
+                 Request help from the remote FTP server.  If a command-name
+                 is specified it is supplied to the server as well.
+
+     remotestatus [file-name]
+                 With no arguments, show status of remote machine.  If
+                 file-name is specified, show status of file-name on remote
+                 machine.
+
+     rename [from] [to]
+                 Rename the file from on the remote machine, to the file to.
+
+     reset       Clear reply queue.  This command re-synchronizes com
+                 mand/reply sequencing with the remote ftp server.  Resynchr o
+                 nization may be necessary following a violation of the ftp
+                 protocol by the remote server.
+
+     restart marker
+                 Restart the immediately following get or put at the indicat ed
+                 marker.  On UNIX systems, marker is usually a byte offset
+                 into the file.
+
+     rmdir directory-name
+                 Delete a directory on the remote machine.
+
+     runique     Toggle storing of files on the local system with unique fil e
+                 names.  If a file already exists with a name equal to the
+                 target local filename for a get or mget command, a ".1" is
+                 appended to the name.  If the resulting name matches anothe r
+                 existing file, a ".2" is appended to the original name.  If
+                 this process continues up to ".99", an error message is
+                 printed, and the transfer does not take place.  The generat ed
+                 unique filename will be reported.  Note that runique will n ot
+                 affect local files generated from a shell command (see
+                 below).  The default value is off.
+
+     send local-file [remote-file]
+ Manual page ftp(1) line 384 (press h for help or q to quit) ESCESC[[66~~                 A synonym for put.
+
+     sendport    Toggle the use of PORT commands.  By default, ftp will
+                 attempt to use a PORT command when establishing a connectio n
+                 for each data transfer.  The use of PORT commands can preve nt
+                 delays when performing multiple file transfers.  If the POR T
+                 command fails, ftp will use the default data port.  When th e
+                 use of PORT commands is disabled, no attempt will be made t o
+                 use PORT commands for each data transfer.  This is useful f or
+                 certain FTP implementations which do ignore PORT commands
+                 but, incorrectly, indicate they've been accepted.
+
+     site arg1 arg2 ...
+                 The arguments specified are sent, verbatim, to the remote F TP
+                 server as a SITE command.
+
+     size file-name
+                 Return size of file-name on remote machine.
+
+     status      Show the current status of ftp.
+
+     struct [struct-name]
+                 Set the file transfer structure to struct-name.  By default
+                 stream structure is used.
+
+     sunique     Toggle storing of files on remote machine under unique file
+                 names.  Remote ftp server must support ftp protocol STOU co m
+                 mand for successful completion.  The remote server will
+                 report unique name.  Default value is off.
+
+     system      Show the type of operating system running on the remote
+                 machine.
+
+     tenex       Set the file transfer type to that needed to talk to TENEX
+                 machines.
+
+     trace       Toggle packet tracing.
+
+     type [type-name]
+                 Set the file transfer type to type-name.  If no type is spe c
+                 ified, the current type is printed.  The default type is ne t
+                 work ASCII.
+
+     umask [newmask]
+                 Set the default umask on the remote server to newmask.  If
+                 newmask is omitted, the current umask is printed.
+
+     user user-name [password] [account]
+ Manual page ftp(1) line 432 (press h for help or q to quit) ESCESC[[66~~                 Identify yourself to the remote FTP server.  If the passwor d
+                 is not specified and the server requires it, ftp will promp t
+                 the user for it (after disabling local echo).  If an accoun t
+                 field is not specified, and the FTP server requires it, the
+                 user will be prompted for it.  If an account field is speci 
+                 fied, an account command will be relayed to the remote serv er
+                 after the login sequence is completed if the remote server
+                 did not require it for logging in.  Unless ftp is invoked
+                 with auto-login disabled, this process is done automati
+                 cally on initial connection to the FTP server.
+
+     verbose     Toggle verbose mode.  In verbose mode, all responses from t he
+                 FTP server are displayed to the user.  In addition, if ver
+                 bose is on, when a file transfer completes, statistics
+                 regarding the efficiency of the transfer are reported.  By
+                 default, verbose is on.
+
+     ? [command]
+                 A synonym for help.
+
+     Command arguments which have embedded spaces may be quoted with quote ` "'
+     marks.
+
+ABORTING A FILE TRANSFER
+     To abort a file transfer, use the terminal interrupt key (usually Ctrl-
+     C).  Sending transfers will be immediately halted.  Receiving transfers
+     will be halted by sending a ftp protocol ABOR command to the remote
+     server, and discarding any further data received.  The speed at which
+     this is accomplished depends upon the remote server's support for ABOR
+     processing.  If the remote server does not support the ABOR command, an
+     ftp> prompt will not appear until the remote server has completed sen d
+     ing the requested file.
+
+     The terminal interrupt key sequence will be ignored when ftp has com
+     pleted any local processing and is awaiting a reply from the remote
+     server.  A long delay in this mode may result from the ABOR processing
+     described above, or from unexpected behavior by the remote server,
+     including violations of the ftp protocol.  If the delay results from
+     unexpected remote server behavior, the local ftp program must be killed
+     by hand.
+
+FILE NAMING CONVENTIONS
+     Files specified as arguments to ftp commands are processed according to
+     the following rules.
+
+     1.   If the file name - is specified, the stdin (for reading) or stdo ut
+          (for writing) is used.
+
+     2.   If the first character of the file name is |, the remainder of t  Manual page ftp(1) line 480 (press h for help or q to quit) ESCESC[[66~~he
+          argument is interpreted as a shell command.  Ftp then forks a shel l,
+          using popen(3) with the argument supplied, and reads (writes) from
+          the stdout (stdin).  If the shell command includes spaces, the arg u
+          ment must be quoted; e.g.  " ls -lt".  A particularly useful exa m
+          ple of this mechanism is: dir more.
+
+     3.   Failing the above checks, if ``globbing'' is enabled, local file
+          names are expanded according to the rules used in the csh(1); c.f.
+          the glob command.  If the ftp command expects a single local file
+          (.e.g.  put), only the first filename generated by the "globbing"
+          operation is used.
+
+     4.   For mget commands and get commands with unspecified local file
+          names, the local filename is the remote filename, which may be
+          altered by a case, ntrans, or nmap setting.  The resulting filenam e
+          may then be altered if runique is on.
+
+     5.   For mput commands and put commands with unspecified remote file
+          names, the remote filename is the local filename, which may be
+          altered by a ntrans or nmap setting.  The resulting filename may
+          then be altered by the remote server if sunique is on.
+
+FILE TRANSFER PARAMETERS
+     The FTP specification specifies many parameters which may affect a file
+     transfer.  The type may be one of ascii, image (binary), ebcdic,
+     and local byte size (for PDP-10's and PDP-20's mostly).  Ftp supports
+     the ascii and image types of file transfer, plus local byte size 8 for
+     tenex mode transfers.
+
+     Ftp supports only the default values for the remaining file transfer
+     parameters: mode, form, and struct.
+
+ENVIRONMENT
+     Ftp utilizes the following environment variables.
+
+     HOME        For default location of a .netrc file, if one exists.
+
+     SHELL       For default shell.
+
+SEE ALSO
+     ftpd(8), netrc(5), RFC 959
+
+HISTORY
+     The ftp command appeared in 4.2BSD.
+
+BUGS
+     Correct execution of many commands depends upon proper behavior by the
+     remote server.
+
+     An error in the treatment of carriage returns in the 4.2BSD ascii-mode
+     transfer code has been corrected.  This correction may result in incor
+     rect transfers of binary files to and from 4.2BSD servers using the asc ii
+ Manual page ftp(1) line 528 (press h for help or q to quit) ESCESC[[55~~     2.   If the first character of the file name is |, the remainder of t
+          (for writing) is used.
+ut
+     1.   If the file name - is specified, the stdin (for reading) or stdo
+     the following rules.
+     Files specified as arguments to ftp commands are processed according to
+FILE NAMING CONVENTIONS
+
+     by hand.
+     unexpected remote server behavior, the local ftp program must be killed
+     including violations of the ftp protocol.  If the delay results from
+     described above, or from unexpected behavior by the remote server,
+     server.  A long delay in this mode may result from the ABOR processing
+     pleted any local processing and is awaiting a reply from the remote
+     The terminal interrupt key sequence will be ignored when ftp has com
+
+     ing the requested file.
+d
+     ftp> prompt will not appear until the remote server has completed sen     processing.  If the remote server does not support the ABOR command, an
+     this is accomplished depends upon the remote server's support for ABOR
+     server, and discarding any further data received.  The speed at which
+     will be halted by sending a ftp protocol ABOR command to the remote
+     C).  Sending transfers will be immediately halted.  Receiving transfers
+     To abort a file transfer, use the terminal interrupt key (usually Ctrl-
+ABORTING A FILE TRANSFER
+
+     marks.
+"'
+     Command arguments which have embedded spaces may be quoted with quote `
+                 A synonym for help.
+     ? [command]
+
+                 default, verbose is on.
+                 regarding the efficiency of the transfer are reported.  By
+                 bose is on, when a file transfer completes, statistics
+                 FTP server are displayed to the user.  In addition, if ver
+he
+     verbose     Toggle verbose mode.  In verbose mode, all responses from t
+                 cally on initial connection to the FTP server.
+                 with auto-login disabled, this process is done automati
+                 did not require it for logging in.  Unless ftp is invoked
+                 after the login sequence is completed if the remote server
+er
+                 fied, an account command will be relayed to the remote serv
+                 user will be prompted for it.  If an account field is speci                 field is not specified, and the FTP server requires it, the
+t
+                 the user for it (after disabling local echo).  If an account
+                 is not specified and the server requires it, ftp will prompd
+                 Identify yourself to the remote FTP server.  If the passwor Manual page ftp(1) line 480 (press h for help or q to quit) ESCESC[[55~~     user user-name [password] [account]
+
+                 newmask is omitted, the current umask is printed.
+                 Set the default umask on the remote server to newmask.  If
+     umask [newmask]
+
+                 work ASCII.
+t
+                 ified, the current type is printed.  The default type is nec
+                 Set the file transfer type to type-name.  If no type is spe     type [type-name]
+
+     trace       Toggle packet tracing.
+
+                 machines.
+     tenex       Set the file transfer type to that needed to talk to TENEX
+
+                 machine.
+     system      Show the type of operating system running on the remote
+
+                 report unique name.  Default value is off.
+                 mand for successful completion.  The remote server will
+m
+                 names.  Remote ftp server must support ftp protocol STOU co     sunique     Toggle storing of files on remote machine under unique file
+
+                 stream structure is used.
+                 Set the file transfer structure to struct-name.  By default
+     struct [struct-name]
+
+     status      Show the current status of ftp.
+
+                 Return size of file-name on remote machine.
+     size file-name
+
+                 server as a SITE command.
+TP
+                 The arguments specified are sent, verbatim, to the remote F     site arg1 arg2 ...
+
+                 but, incorrectly, indicate they've been accepted.
+                 certain FTP implementations which do ignore PORT commands
+or
+                 use PORT commands for each data transfer.  This is useful fo
+                 use of PORT commands is disabled, no attempt will be made te
+                 command fails, ftp will use the default data port.  When thT
+                 delays when performing multiple file transfers.  If the PORnt
+                 for each data transfer.  The use of PORT commands can preven
+                 attempt to use a PORT command when establishing a connectio     sendport    Toggle the use of PORT commands.  By default, ftp will
+
+                 A synonym for put.
+ Manual page ftp(1) line 432 (press h for help or q to quit) ESCESC[[55~~     send local-file [remote-file]
+
+                 below).  The default value is off.
+                 affect local files generated from a shell command (see
+ot
+                 unique filename will be reported.  Note that runique will ned
+                 printed, and the transfer does not take place.  The generat                 this process continues up to ".99", an error message is
+                 existing file, a ".2" is appended to the original name.  If
+r
+                 appended to the name.  If the resulting name matches anothe                 target local filename for a get or mget command, a ".1" is
+                 names.  If a file already exists with a name equal to the
+e
+     runique     Toggle storing of files on the local system with unique fil
+                 Delete a directory on the remote machine.
+     rmdir directory-name
+
+                 into the file.
+                 marker.  On UNIX systems, marker is usually a byte offset
+ed
+                 Restart the immediately following get or put at the indicat     restart marker
+
+                 protocol by the remote server.
+                 nization may be necessary following a violation of the ftp
+o
+                 mand/reply sequencing with the remote ftp server.  Resynchr     reset       Clear reply queue.  This command re-synchronizes com
+
+                 Rename the file from on the remote machine, to the file to.
+     rename [from] [to]
+
+                 machine.
+                 file-name is specified, show status of file-name on remote
+                 With no arguments, show status of remote machine.  If
+     remotestatus [file-name]
+
+                 is specified it is supplied to the server as well.
+                 Request help from the remote FTP server.  If a command-name
+     remotehelp [command-name]
+
+                 are prone to dropping connections.
+t
+                 useful when transferring very large files over networks tha                 does not exist ftp won't fetch the file.  This command is
+e
+                 continued from the apparent point of failure.  If local-fil                 tially transferred copy of remote-file and the transfer is
+r
+                 smaller than remote-file, local-file is presumed to be a pas
+                 Reget acts like get, except that if local-file exists and i     reget remote-file [local-file]
+
+                 A synonym for get.
+ Manual page ftp(1) line 384 (press h for help or q to quit) ESCESC[[55~~     recv remote-file [local-file]
+
+                 server.
+TP
+                 The arguments specified are sent, verbatim, to the remote F     quote arg1 arg2 ...
+
+     quit        A synonym for bye.
+
+                 machine.
+te
+     pwd         Print the name of the current working directory on the remo
+                 type, format, mode, and structure.
+                 remote file.  File transfer uses the current settings for
+                 ing according to any ntrans or nmap settings in naming the
+
+                 left unspecified, the local file name is used after processs
+                 Store a local file on the remote machine.  If remote-file i     put local-file [remote-file]
+
+                 the server on the secondary control connection.
+y
+                 fers depend upon support of the ftp protocol PASV command b                 on the primary control connection.  Third party file trans
+st
+                 from the host on the secondary control connection to the ho                 trol connection, and put, mput, and append transfer files
+
+                 primary control connection to the host on the secondary con                 nitions, get and mget transfer files from the host on the
+i
+                 auto-login process, close will not erase existing macro def                 aced by proxy: open will not define new macros during the
+                 tion.  The following commands behave differently when pref
+                 see other ftp commands executable on the secondary connec
+                 ondary control connection.  Enter the command "proxy ?" to
+
+                 first proxy command should be an open, to establish the sece
+                 servers for transferring files between the two servers.  Thtp
+                 This command allows simultaneous connection to two remote f                 Execute an ftp command on a secondary control connection.
+     proxy ftp-command
+
+                 and any mdelete will delete all files.
+                 (default is on), any mget or mput will transfer all files,
+                 tively retrieve or store files.  If prompting is turned off
+                 during multiple file transfers to allow the user to selec
+     prompt      Toggle interactive prompting.  Interactive prompting occurs
+
+.
+                 automatically log the user in to the FTP server (see below)                 auto-login option is on (default), ftp will also attempt to
+                 attempt to contact an FTP server at that port.  If the
+ll
+ Manual page ftp(1) line 338 (press h for help or q to quit) ESCESC[[55~~                 optional port number may be supplied, in which case, ftp win
+                 Establish a connection to the specified host FTP server.  A     open host [port]
+
+                 of outchars, the character is deleted from the file name.
+th
+                 the character's position in inchars is longer than the leng                 replaced with the corresponding character in outchars.  If
+e
+                 Characters in a filename matching a character in inchars ars.
+                 computer with different file naming conventions or practice                 This command is useful when connecting to a non-UNIX remote
+                 commands issued without a specified local target filename.
+                 local filenames are translated during mget commands and get
+                 get filename.  If arguments are specified, characters in
+r
+                 mands and put commands issued without a specified remote ta                 acters in remote filenames are translated during mput com
+r
+                 lation mechanism is unset.  If arguments are specified, cha
+                 If no arguments are specified, the filename character trans                 Set or unset the filename character translation mechanism.
+     ntrans [inchars [outchars]]
+
+                 `$','[','[', and `,' characters.
+e
+                 .  Use the `\' character to prevent special treatment of th'
+                 outpattern, as in the example: `nmap $1 sed "s/  *$//" > $1                 input filename ".myfile".  Spaces may be included in
+                 the input filename "myfile", and "myfile.myfile" for the
+r
+                 names "myfile.data" and "myfile.data.old", "myfile.file" foe
+                 would yield the output filename "myfile.data" for input fil
+                       nmap $1.$2.$3 [$1,$2].[$2,file]
+
+                 For example, the command
+.
+                 seq1 is not a null string; otherwise it is replaced by seq2                 ally, the sequence [seq1, seq2] is replaced by [seq1] if
+n
+                 sequence `$0' is replace by the original filename.  Additio                 any value resulting from the inpattern template.  The
+                 name.  The sequences `$1', `$2', ...., `$9' are replaced by
+e
+                 "data".  The outpattern determines the resulting mapped filue
+                 $1 would have the value "mydata", and $2 would have the val",
+                 given inpattern $1.$2 and the remote file name "mydata.datae,
+                 determine the nmap [inpattern] variable values.  For exampl                 other characters are treated literally, and are used to
+ Manual page ftp(1) line 298 (press h for help or q to quit) ESCESC[[55~~                 prevent this special treatment of the `$' character.  All
+to
+                 the sequences `$1', `$2', ..., `$9' in inpattern.  Use `\' g
+                 settings).  Variable templating is accomplished by includine
+                 have already been processed according to the ntrans and cas                 [Inpattern] is a template for incoming filenames (which may
+.
+                 mapping follows the pattern set by inpattern and outpattern                 with different file naming conventions or practices.  The
+r
+                 mand is useful when connecting to a non-UNIX remote compute
+                 issued without a specified local target filename.  This com                 filenames are mapped during mget commands and get commands
+                 remote target filename.  If arguments are specified, local
+                 mput commands and put commands issued without a specified
+                 arguments are specified, remote filenames are mapped during
+                 are specified, the filename mapping mechanism is unset.  If
+ts
+                 Set or unset the filename mapping mechanism.  If no argumen     nmap [inpattern outpattern]
+
+                 output is sent to the terminal.
+                 If no local file is specified, or if local-file is -, the
+                 is indeed the target local file for receiving nlist output.
+nt
+                 on, ftp will prompt the user to verify that the last argumes
+                 rent working directory is used.  If interactive prompting i                 machine.  If remote-directory is left unspecified, the cur
+                 Print a  list of the files in a directory on the remote
+     nlist [remote-directory] [local-file]
+
+                 get.
+                 considered newer.  Otherwise, this command is identical to
+is
+                 file does not exist on the current system, the remote file                  is more recent that the file on the current system.  If the
+le
+                 Get the file only if the modification time of the remote fi     newer file-name [local-file]
+
+s.
+                 will then be processed according to ntrans and nmap settinges
+                 glob for details of filename expansion.  Resulting file name
+                 ments and do a put for each file in the resulting list.  Se                 Expand wild cards in the list of local files given as argu
+     mput local-files
+
+                 machine.
+                 Show the last modification time of the file on the remote
+     modtime file-name
+
+                 stream mode.
+ Manual page ftp(1) line 254 (press h for help or q to quit) ESCESC[[55~~is
+                 Set the file transfer mode to mode-name.  The default mode      mode [mode-name]
+
+                 output.
+                 argument is indeed the target local file for receiving mls
+                 ing is on, ftp will prompt the user to verify that the last
+t
+                 and the local-file must be specified.  If interactive promp                 Like nlist, except multiple remote files may be specified,
+     mls remote-files local-file
+
+                 Make a directory on the remote machine.
+     mkdir directory-name
+
+                 can be created with ! mkdir directory.
+                 can be changed with lcd directory; new local directories
+ch
+                 Files are transferred into the local working directory, whi                 processed according to case, ntrans, and nmap settings.
+                 the filename expansion.  Resulting file names will then be
+                 for each file name thus produced.  See glob for details on
+                 Expand the remote-files on the remote machine and do a get
+     mget remote-files
+
+                 for receiving mdir output.
+                 ify that the last argument is indeed the target local file
+r
+                 interactive prompting is on, ftp will prompt the user to vef
+                 Like dir, except multiple remote files may be specified.  I     mdir remote-files local-file
+
+                 Delete the remote-files on the remote machine.
+     mdelete [remote-files]
+
+                 treatment of the `$'.
+                 replaced by that character.  Use the `\' to prevent special
+                 argument, and so on.  A `\' followed by any character is
+                 mand line, on the second pass it is replaced by the second
+                 replaced by the first argument on the macro invocation com
+                 ing macro is to be looped.  On the first pass `$i' is
+t
+                 lowed by an `i' signals that macro processor that the execu                 argument on the macro invocation command line.  A `$' fol
+                 by a number (or numbers) is replaced by the corresponding
+ed
+                 interprets `$' and `\' as special characters.  A `$' follow                 until a close command is executed.  The macro processor
+                 characters in all defined macros.  Macros remain defined
+                 input mode.  There is a limit of 16 macros and 4096 total
+o
+                 file or carriage returns from the terminal) terminates macra
+                 macro-name; a null line (consecutive newline characters in                  Define a macro.  Subsequent lines are stored as the macro
+     macdef macro-name
+
+ Manual page ftp(1) line 205 (press h for help or q to quit) ESCESC[[55~~                 is -, the output is sent to the terminal.
+                 ls output.  If no local file is specified, or if local-file
+                 last argument is indeed the target local file for receiving
+e
+                 prompting is on, ftp will prompt the user to verify that th                 the current working directory is used.  If interactive
+                 (See also nlist.)  If remote-directory is left unspecified,
+                 UNIX systems will produce output from the command ls -l.
+                 tion that the server chooses to include; for example, most
+
+                 machine.  The listing includes any system-dependent informae
+                 Print a listing of the contents of a directory on the remot     ls [remote-directory] [local-file]
+
+                 directory is specified, the user's home directory is used.
+                 Change the working directory on the local machine.  If no
+     lcd [directory]
+
+     ipv6        Restrict host adressing to IPv6 only.
+
+                 addresses.
+     ipv4        Restrict the address resolver to look only for IPv4
+
+     ipany       Allow the address resolver to return any address family.
+
+                 printed.
+is
+                 onds.  If seconds is omitted, the current inactivity timer c
+                 Set the inactivity timer on the remote server to seconds se     idle [seconds]
+
+                 mands.
+
+                 If no argument is given, ftp prints a list of the known com                 Print an informative message about the meaning of command.
+     help [command]
+
+                 ferred.  The size of a data block is 1024 bytes.
+
+     hash        Toggle hash-sign (``#'') printing for each data block trans
+                 tar(1) archive of the subtree (in binary mode).
+                 tory subtrees of files.  That can be done by transferring a
+                 Note: mget and mput are not meant to transfer entire direc
+                 server, and can be previewed by doing mls remote-files -
+p
+                 exact result depends on the foreign operating system and fthe
+                 different from expansion of the name of an ordinary file: t                 not merged.  Expansion of a directory name is likely to be
+                 expanded separately on the remote machine and the lists are
+is
+                 as in csh(1).  For mdelete and mget, each remote file name e
+                 taken literally and not expanded.  Globbing for mput is donre
+ Manual page ftp(1) line 158 (press h for help or q to quit) ESCESC[[55~~                 globbing is turned off with glob, the file name arguments a     glob        Toggle filename expansion for mdelete, mget and mput.  If
+
+                 transferring the file.
+                 settings for type, form, mode, and structure are used while
+                 the current case, ntrans, and nmap settings.  The current
+                 name it has on the remote machine, subject to alteration by
+me
+                 If the local file name is not specified, it is given the sa                 Retrieve the remote-file and store it on the local machine.
+     get remote-file [local-file]
+
+                 file.
+s
+                 Set the file transfer form to format.  The default format i     form format
+
+     disconnect  A synonym for close.
+
+                 local-file is -, output comes to the terminal.
+                 machine is used.  If no local file is specified, or
+                 specified, the current working directory on the remote
+s
+                 get local file for receiving dir output.  If no directory i
+                 the user to verify that the last argument is indeed the tart
+                 local-file.  If interactive prompting is on, ftp will promp                 remote-directory, and, optionally, placing the output in
+                 Print a listing of the directory contents in the directory,
+     dir [remote-directory] [local-file]
+
+                 preceded by the string -->
+                 is on, ftp prints each command sent to the remote machine,
+                 fied it is used to set the debugging level.  When debugging
+
+                 Toggle debugging mode.  If an optional debug-value is speci     debug [debug-value]
+
+                 Delete the file remote-file on the remote machine.
+     delete remote-file
+
+                 output is a tty.
+                 the standard output.  This is the default when the standard
+s
+                 ters are replaced with a question mark if the output file ic
+                 ASCII type commands.  When this is turned on, control chara     qc          Toggle the printing of control characters in the output of
+
+                 off.
+s
+                 may be distinguished from a record delimiter only when cr i                 feeds; when an ascii type transfer is made, these linefeeds
+                 Records on non-UNIX remote systems may contain single line
+                 conform with the UNIX single linefeed record delimiter.
+to
+                 default), carriage returns are stripped from this sequence  Manual page ftp(1) line 111 (press h for help or q to quit) ESCESC[[55~~he
+                 sequence during ascii type file transfer.  When cr is on (ted
+                 retrieval.  Records are denoted by a carriage return/linefe     cr          Toggle carriage return stripping during ascii type file
+
+                 to the command interpreter.  Any defined macros are erased.
+n
+     close       Terminate the FTP session with the remote server, and retur
+                 remote sytem to mode.
+                 Change the permission modes of the file file-name on the
+     chmod mode file-name
+
+                 the current remote machine working directory.
+f
+     cdup        Change the remote machine working directory to the parent o
+                 remote-directory.
+                 Change the working directory on the remote machine to
+     cd remote-directory
+
+                 local directory with the letters mapped to lower case.
+e
+                 file names with all letters in upper case are written in thr
+                 commands.  When case is on (default is off), remote compute     case        Toggle remote computer file name case mapping during mget
+
+                 exit.
+                 ftp.  An end of file will also terminate the session and
+     bye         Terminate the FTP session with the remote server and exit
+
+.
+     binary      Set the file transfer type to support binary image transfer
+                 mand is completed.
+
+     bell        Arrange that a bell be sounded after each file transfer com
+                 default type.
+     ascii       Set the file transfer type to network ASCII.  This is the
+
+                 type, format, mode, and structure.
+or
+                 or nmap setting.  File transfer uses the current settings f                 in naming the remote file after being altered by any ntrans
+d
+                 remote-file is left unspecified, the local file name is use                 Append a local file to a file on the remote machine.  If
+     append local-file [remote-file]
+
+e.
+                 prompted for an account password in a non-echoing input mod                 completed.  If no argument is included, the user will be
+                 for access to resources once a login has been successfully
+                 Supply a supplemental password required by a remote system
+     account [passwd]
+ Manual page ftp(1) line 64 (press h for help or q to quit) ESCESC[[55~~
+                 command.  Arguments are passed to the macro unglobbed.
+ef
+                 Execute the macro macro-name that was defined with the macd     $ macro-name [args]
+
+                 directly, with the rest of the arguments as its arguments.
+e
+                 are arguments, the first is taken to be a command to execut                 Invoke an interactive shell on the local machine.  If there
+     ! [command [args]]
+
+     recognized by ftp:
+     the prompt ftp> is provided to the user.  The following commands are
+r
+     instructions from the user.  When ftp is awaiting commands from the use     host; otherwise, ftp will enter its command interpreter and await
+     immediately attempt to establish a connection to an FTP server on that
+     cate may be specified on the command line.  If this is done, ftp will
+i
+     The client host and an optional port number with which ftp is to commun
+     -d    Enables debugging.
+
+           server, as well as report on data transfer statistics.
+     -v    Verbose option forces ftp to show all responses from the remote
+
+     -g    Disables file name globbing.
+
+           into the ftp executable. Otherwise, does nothing.
+     -e    Disables command editing and history support, if it was compiled
+
+           account with which to login.
+an
+           the local machine), and, if necessary, prompt for a password and n
+           for the remote machine login name (default is the user identity opt
+           account on the remote machine.  If no entry exists, ftp will prom           file in the user's home directory for an entry describing an
+)
+           If auto-login is enabled, ftp will check the .netrc (see netrc(5)n.
+     -n    Restrains ftp from attempting auto-login upon initial connectio
+     -i    Turns off interactive prompting during multiple file transfers.
+
+           the PASV command. This is the default if invoked as pftp.
+           back to the client machine. Requires that the ftp server support
+d
+           ments where a firewall prevents connections from the outside worl
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+     -6    Use IPv6 only.
+
+     -4    Use only IPv4 to contact any host.
+
+ Manual page ftp(1) line 17 (press h for help or q to quit) ESCESC[[55~~     preter.
+     Options may be specified at the command line, or to the command inter
+
+     network site.
+     col.  The program allows a user to transfer files to and from a remote
+     Ftp is the user interface to the Internet standard File Transfer Proto
+DESCRIPTION
+
+     pftp [-46inegvd] [host [port]]
+     ftp [-46pinegvd] [host [port]]
+SYNOPSIS
+
+     ftp  Internet file transfer program
+NAME
+
+1)
+FTP(1)                    BSD General Commands Manual                   FTP( Manual page ftp(1) line 1 (press h for help or q to quit) ESCESC[[55~~ Manual page ftp(1) line 1 (press h for help or q to quit) ESCESCOOBB     host; otherwise, ftp will enter its command interpreter and await
+ Manual page ftp(1) line 1 (press h for help or q to quit) ESCESCOOBB     instructions from the user.  When ftp is awaiting commands from the use  Manual page ftp(1) line 2 (press h for help or q to quit) ESCESCOOBBr
+ Manual page ftp(1) line 3 (press h for help or q to quit) ESCESCOOBB     the prompt ftp> is provided to the user.  The following commands are
+ Manual page ftp(1) line 4 (press h for help or q to quit) ESCESCOOBB     recognized by ftp:
+ Manual page ftp(1) line 5 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 6 (press h for help or q to quit) ESCESCOOBB     ! [command [args]]
+ Manual page ftp(1) line 7 (press h for help or q to quit) ESCESCOOBB                 Invoke an interactive shell on the local machine.  If there
+ Manual page ftp(1) line 8 (press h for help or q to quit) ESCESCOOBB                 are arguments, the first is taken to be a command to execut  Manual page ftp(1) line 9 (press h for help or q to quit) ESCESCOOBBe
+ Manual page ftp(1) line 10 (press h for help or q to quit) ESCESCOOBB                 directly, with the rest of the arguments as its arguments.
+ Manual page ftp(1) line 11 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 12 (press h for help or q to quit) ESCESCOOBB     $ macro-name [args]
+ Manual page ftp(1) line 13 (press h for help or q to quit) ESCESCOOBB                 Execute the macro macro-name that was defined with the macd  Manual page ftp(1) line 14 (press h for help or q to quit) ESCESCOOBBef
+ Manual page ftp(1) line 15 (press h for help or q to quit) ESCESCOOBB                 command.  Arguments are passed to the macro unglobbed.
+ Manual page ftp(1) line 16 (press h for help or q to quit) ESCESCOOBB
+ Manual page ftp(1) line 17 (press h for help or q to quit) ESCESCOOBB     account [passwd]
+ Manual page ftp(1) line 18 (press h for help or q to quit) ESCESCOOBB                 Supply a supplemental password required by a remote system
+ Manual page ftp(1) line 19 (press h for help or q to quit)/--ss
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ 
+           ments where a firewall prevents connections from the outside worl d
+           back to the client machine. Requires that the ftp server support
+           the PASV command. This is the default if invoked as pftp.
+
+     -i    Turns off interactive prompting during multiple file transfers.
+
+     -n    Restrains ftp from attempting auto-login upon initial connectio n.
+           If auto-login is enabled, ftp will check the .netrc (see netrc(5) )
+           file in the user's home directory for an entry describing an
+           account on the remote machine.  If no entry exists, ftp will prom pt
+           for the remote machine login name (default is the user identity o n
+           the local machine), and, if necessary, prompt for a password and  an
+           account with which to login.
+
+     -e    Disables command editing and history support, if it was compiled
+           into the ftp executable. Otherwise, does nothing.
+
+     -g    Disables file name globbing.
+
+     -v    Verbose option forces ftp to show all responses from the remote
+           server, as well as report on data transfer statistics.
+
+     -d    Enables debugging.
+
+     The client host and an optional port number with which ftp is to commun i
+     cate may be specified on the command line.  If this is done, ftp will
+     immediately attempt to establish a connection to an FTP server on that
+     host; otherwise, ftp will enter its command interpreter and await
+     instructions from the user.  When ftp is awaiting commands from the use r
+     the prompt ftp> is provided to the user.  The following commands are
+     recognized by ftp:
+
+     ! [command [args]]
+                 Invoke an interactive shell on the local machine.  If there
+                 are arguments, the first is taken to be a command to execut e
+                 directly, with the rest of the arguments as its arguments.
+
+     $ macro-name [args]
+                 Execute the macro macro-name that was defined with the macd ef
+                 command.  Arguments are passed to the macro unglobbed.
+
+     account [passwd]
+                 Supply a supplemental password required by a remote system
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ 
+           ments where a firewall prevents connections from the outside worl d
+           back to the client machine. Requires that the ftp server support
+           the PASV command. This is the default if invoked as pftp.
+
+     -i    Turns off interactive prompting during multiple file transfers.
+
+     -n    Restrains ftp from attempting auto-login upon initial connectio n.
+           If auto-login is enabled, ftp will check the .netrc (see netrc(5) )
+           file in the user's home directory for an entry describing an
+           account on the remote machine.  If no entry exists, ftp will prom pt
+           for the remote machine login name (default is the user identity o n
+           the local machine), and, if necessary, prompt for a password and  an
+           account with which to login.
+
+     -e    Disables command editing and history support, if it was compiled
+           into the ftp executable. Otherwise, does nothing.
+
+     -g    Disables file name globbing.
+
+     -v    Verbose option forces ftp to show all responses from the remote
+           server, as well as report on data transfer statistics.
+
+     -d    Enables debugging.
+
+     The client host and an optional port number with which ftp is to commun i
+     cate may be specified on the command line.  If this is done, ftp will
+     immediately attempt to establish a connection to an FTP server on that
+     host; otherwise, ftp will enter its command interpreter and await
+     instructions from the user.  When ftp is awaiting commands from the use r
+     the prompt ftp> is provided to the user.  The following commands are
+     recognized by ftp:
+
+     ! [command [args]]
+                 Invoke an interactive shell on the local machine.  If there
+                 are arguments, the first is taken to be a command to execut e
+                 directly, with the rest of the arguments as its arguments.
+
+     $ macro-name [args]
+                 Execute the macro macro-name that was defined with the macd ef
+                 command.  Arguments are passed to the macro unglobbed.
+
+     account [passwd]
+                 Supply a supplemental password required by a remote system
+...skipping...
+     hash        Toggle hash-sign (``#'') printing for each data block trans 
+                 ferred.  The size of a data block is 1024 bytes.
+
+     help [command]
+                 Print an informative message about the meaning of command.
+                 If no argument is given, ftp prints a list of the known com 
+                 mands.
+
+     idle [seconds]
+                 Set the inactivity timer on the remote server to seconds se c
+                 onds.  If seconds is omitted, the current inactivity timer  is
+                 printed.
+
+     ipany       Allow the address resolver to return any address family.
+
+     ipv4        Restrict the address resolver to look only for IPv4
+                 addresses.
+
+     ipv6        Restrict host adressing to IPv6 only.
+
+     lcd [directory]
+                 Change the working directory on the local machine.  If no
+                 directory is specified, the user's home directory is used.
+
+     ls [remote-directory] [local-file]
+                 Print a listing of the contents of a directory on the remot e
+                 machine.  The listing includes any system-dependent informa 
+                 tion that the server chooses to include; for example, most
+                 UNIX systems will produce output from the command ls -l.
+                 (See also nlist.)  If remote-directory is left unspecified,
+                 the current working directory is used.  If interactive
+                 prompting is on, ftp will prompt the user to verify that th e
+                 last argument is indeed the target local file for receiving
+                 ls output.  If no local file is specified, or if local-file
+                 is -, the output is sent to the terminal.
+
+     macdef macro-name
+                 Define a macro.  Subsequent lines are stored as the macro
+                 macro-name; a null line (consecutive newline characters in  a
+                 file or carriage returns from the terminal) terminates macr o
+                 input mode.  There is a limit of 16 macros and 4096 total
+                 characters in all defined macros.  Macros remain defined
+                 until a close command is executed.  The macro processor
+                 interprets `$' and `\' as special characters.  A `$' follow ed
+                 by a number (or numbers) is replaced by the corresponding
+                 argument on the macro invocation command line.  A `$' fol
+                 lowed by an `i' signals that macro processor that the execu t
+ Manual page ftp(1) line 170 (press h for help or q to quit)/...skipping...
+     reset       Clear reply queue.  This command re-synchronizes com
+                 mand/reply sequencing with the remote ftp server.  Resynchr o
+                 nization may be necessary following a violation of the ftp
+                 protocol by the remote server.
+
+     restart marker
+                 Restart the immediately following get or put at the indicat ed
+                 marker.  On UNIX systems, marker is usually a byte offset
+                 into the file.
+
+     rmdir directory-name
+                 Delete a directory on the remote machine.
+
+     runique     Toggle storing of files on the local system with unique fil e
+                 names.  If a file already exists with a name equal to the
+                 target local filename for a get or mget command, a ".1" is
+                 appended to the name.  If the resulting name matches anothe r
+                 existing file, a ".2" is appended to the original name.  If
+                 this process continues up to ".99", an error message is
+                 printed, and the transfer does not take place.  The generat ed
+                 unique filename will be reported.  Note that runique will n ot
+                 affect local files generated from a shell command (see
+                 below).  The default value is off.
+
+     send local-file [remote-file]
+                 A synonym for put.
+
+     sendport    Toggle the use of PORT commands.  By default, ftp will
+                 attempt to use a PORT command when establishing a connectio n
+                 for each data transfer.  The use of PORT commands can preve nt
+                 delays when performing multiple file transfers.  If the POR T
+                 command fails, ftp will use the default data port.  When th e
+                 use of PORT commands is disabled, no attempt will be made t o
+                 use PORT commands for each data transfer.  This is useful f or
+                 certain FTP implementations which do ignore PORT commands
+                 but, incorrectly, indicate they've been accepted.
+
+     site arg1 arg2 ...
+                 The arguments specified are sent, verbatim, to the remote F TP
+                 server as a SITE command.
+
+     size file-name
+                 Return size of file-name on remote machine.
+
+     status      Show the current status of ftp.
+ Manual page ftp(1) line 407 (press h for help or q to quit)/Pattern not found  (press RETURN)/Pattern not found  (press RETURN)/Pattern not found  (press RETURN)xjurp20@4iz110:~$ xjurp20@4iz110:~$ xjurp20@4iz110:~$ ftop p localhost
+Connected to localhost.
+220 ProFTPD 1.3.4a Server (4IZ110-FTP) [127.0.0.1]
+Name (localhost:xjurp20): Abn  nonymous
+331 Password required for Anonymous
+Password:
+530 Login incorrect.
+Login failed.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> quit
+221 Goodbye.
+xjurp20@4iz110:~$ ls
+apache  mail  mbox  p  port.txt  uzivatele  vycisti_logy.sh
+xjurp20@4iz110:~$ ping loclalhost
+PING localhost (127.0.0.1) 56(84) bytes of data.
+64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.035 ms
+64 bytes from localhost (127.0.0.1): icmp_req=2 ttl=64 time=0.051 ms
+^C
+--- localhost ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 999ms
+rtt min/avg/max/mdev = 0.035/0.043/0.051/0.008 ms
+xjurp20@4iz110:~$ ftp localhost
+Connected to localhost.
+220 ProFTPD 1.3.4a Server (4IZ110-FTP) [127.0.0.1]
+Name (localhost:xjurp20): ^Cxjurp20@4iz110:~$ 
+xjurp20@4iz110:~$ 
+xjurp20@4iz110:~$ 
+xjurp20@4iz110:~$ ftp localhost-localhostAlocalhost localhost
+ftp: A: unknown option
+xjurp20@4iz110:~$ man ftp
+FTP(1)                    BSD General Commands Manual                   FTP(1)
+
+NAME
+     ftp  Internet file transfer program
+
+SYNOPSIS
+     ftp [-46pinegvd] [host [port]]
+     pftp [-46inegvd] [host [port]]
+
+DESCRIPTION
+     Ftp is the user interface to the Internet standard File Transfer Proto
+     col.  The program allows a user to transfer files to and from a remote
+     network site.
+
+     Options may be specified at the command line, or to the command inter
+     preter.
+
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+ Manual page ftp(1) line 1 (press h for help or q to quit)/aannoonnyymmFTP(1)                    BSD General Commands Manual                   FTP(1)
+
+NAME
+     ftp  Internet file transfer program
+
+SYNOPSIS
+     ftp [-46pinegvd] [host [port]]
+     pftp [-46inegvd] [host [port]]
+
+DESCRIPTION
+     Ftp is the user interface to the Internet standard File Transfer Proto
+     col.  The program allows a user to transfer files to and from a remote
+     network site.
+
+     Options may be specified at the command line, or to the command inter
+     preter.
+
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+FTP(1)                    BSD General Commands Manual                   FTP(1)
+
+NAME
+     ftp  Internet file transfer program
+
+SYNOPSIS
+     ftp [-46pinegvd] [host [port]]
+     pftp [-46inegvd] [host [port]]
+
+DESCRIPTION
+     Ftp is the user interface to the Internet standard File Transfer Proto
+     col.  The program allows a user to transfer files to and from a remote
+     network site.
+
+     Options may be specified at the command line, or to the command inter
+     preter.
+
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+Pattern not found  (press RETURN)/aannoonnyymmoouussFTP(1)                    BSD General Commands Manual                   FTP(1)
+
+NAME
+     ftp  Internet file transfer program
+
+SYNOPSIS
+     ftp [-46pinegvd] [host [port]]
+     pftp [-46inegvd] [host [port]]
+
+DESCRIPTION
+     Ftp is the user interface to the Internet standard File Transfer Proto
+     col.  The program allows a user to transfer files to and from a remote
+     network site.
+
+     Options may be specified at the command line, or to the command inter
+     preter.
+
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+FTP(1)                    BSD General Commands Manual                   FTP(1)
+
+NAME
+     ftp  Internet file transfer program
+
+SYNOPSIS
+     ftp [-46pinegvd] [host [port]]
+     pftp [-46inegvd] [host [port]]
+
+DESCRIPTION
+     Ftp is the user interface to the Internet standard File Transfer Proto
+     col.  The program allows a user to transfer files to and from a remote
+     network site.
+
+     Options may be specified at the command line, or to the command inter
+     preter.
+
+     -4    Use only IPv4 to contact any host.
+
+     -6    Use IPv6 only.
+
+     -p    Use passive mode for data transfers. Allows use of ftp in environ
+           ments where a firewall prevents connections from the outside world
+Pattern not found  (press RETURN)xjurp20@4iz110:~$ man ftpftp -A localhostlocalhostlocalhostlocalhost
+Connected to localhost.
+220 ProFTPD 1.3.4a Server (4IZ110-FTP) [127.0.0.1]
+Name (localhost:xjurp20): Anonymous
+331 Password required for Anonymous
+Password:
+530 Login incorrect.
+Login failed.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> quit
+221 Goodbye.
+xjurp20@4iz110:~$ ftp localhost
+Connected to localhost.
+220 ProFTPD 1.3.4a Server (4IZ110-FTP) [127.0.0.1]
+Name (localhost:xjurp20): Anonymous         ANO   anonymous
+331 Anonymous login ok, send your complete email address as your password
+Password:
+230-Welcome, archive user anonymous@localhost !
+230-
+230-The local time is: Tue Jun 17 11:13:41 2014
+230-
+230-This is an experimental FTP server.  If you have any unusual problems,
+230-please report them via e-mail to <root@localhost>.
+230-
+230 Anonymous access granted, restrictions apply
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> pasv
+?Invalid command
+ftp> PASV
+?Invalid command
+ftp> PASSV
+?Invalid command
+ftp> pwd
+257 "/" is the current directory
+ftp> cd pinkas
+250 CWD command successful
+ftp> get dobry_den_loc
+local: dobry_den_loc remote: dobry_den_loc
+200 PORT command successful
+150 Opening BINARY mode data connection for dobry_den_loc (219 bytes)
+226 Transfer complete
+219 bytes received in 0.01 secs (41.6 kB/s)
+ftp> quit
+221 Goodbye.
+xjurp20@4iz110:~$ ls
+apache  dobry_den_loc  mail  mbox  p  port.txt  uzivatele  vycisti_logy.sh
+xjurp20@4iz110:~$ cat dobry_den_loc 
+#!/usr/local/bin/perl
+##
+## 8.1.2011 Jednoduchý CGI skript - uloit na jiném serveru.
+## .4.2008 - pvodn: /usr/local/bin/perl.
+
+print "Content-type: text/plain; charset=UTF-8\n\n";
+
+print "\nDobrý den! \n";
+
+
+
+
+
+
+xjurp20@4iz110:~$ mv dobry_den_loc apache/cgi-bin/
+printenv  test-cgi  
+xjurp20@4iz110:~$ mv dobry_den_loc apache/cgi-bin/doberry.
+xjurp20@4iz110:~$ cd apache/
+xjurp20@4iz110:~/apache$ ls
+bin    cgi-bin  error   icons    lib   man     modules
+build  conf     htdocs  include  logs  manual
+xjurp20@4iz110:~/apache$ cd htdocs/
+xjurp20@4iz110:~/apache/htdocs$ vi .htaccess 
+".htaccess" 4L, 88CAuthType Basic
+AuthName "heslo"
+AuthUserFile /home/xjurp20/uzivatele
+Require valid-user
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               1,1All:qxjurp20@4iz110:~/apache/htdocs$ m vv .htaccess .htaccess 
+xjurp20@4iz110:~/apache/htdocs$ ls
+404.html  abc          htaccess    index.html.bak  log1.shtml  vhost
+404.jpg   favicon.ico  index.html  log0.shtml      perl
+xjurp20@4iz110:~/apache/htdocs$ cd ..
+xjurp20@4iz110:~/apache$ ls
+bin    cgi-bin  error   icons    lib   man     modules
+build  conf     htdocs  include  logs  manual
+xjurp20@4iz110:~/apache$ cd cgi-bin/
+xjurp20@4iz110:~/apache/cgi-bin$ ls
+dobry_den_loc  printenv  test-cgi
+xjurp20@4iz110:~/apache/cgi-bin$ chmd0od +x dobry_den_loc 
+xjurp20@4iz110:~/apache/cgi-bin$ ls
+dobry_den_loc  printenv  test-cgi
+xjurp20@4iz110:~/apache/cgi-bin$ cat printenv 
+#!/usr/bin/perl
+##
+##  printenv -- demo CGI program which just prints its environment
+##
+
+print "Content-type: text/plain; charset=iso-8859-1\n\n";
+foreach $var (sort(keys(%ENV))) {
+    $val = $ENV{$var};
+    $val =~ s|\n|\\n|g;
+    $val =~ s|"|\\"|g;
+    print "${var}=\"${val}\"\n";
+}
+
+xjurp20@4iz110:~/apache/cgi-bin$ cat dobry_den_loc 
+#!/usr/local/bin/perl
+##
+## 8.1.2011 Jednoduchý CGI skript - uloit na jiném serveru.
+## .4.2008 - pvodn: /usr/local/bin/perl.
+
+print "Content-type: text/plain; charset=UTF-8\n\n";
+
+print "\nDobrý den! \n";
+
+
+
+
+
+
+xjurp20@4iz110:~/apache/cgi-bin$ vi doberry_den_loc 
+"dobry_den_loc" [converted] 14L, 229C#!/usr/local/bin/perl
+##
+## 8.1.2011 JednoduchÃ½ CGI skript - uloÅ¾it na jinÃ©m serveru.
+## .4.2008 - pùvodnì: /usr/local/bin/perl.
+
+print "Content-type: text/plain; charset=UTF-8\n\n";
+
+print "\nDobrÃ½ den! \n";~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               1,1All-- INSERT --1,1All2345678910123a/bin/perl2c/bin/perl1o/bin/perl0l/bin/perl9 //bin/perl8/bin/perl71,6All:x"dobry_den_loc" [converted] 14L, 223C written
+xjurp20@4iz110:~/apache/cgi-bin$ ls
+dobry_den_loc  printenv  test-cgi
+xjurp20@4iz110:~/apache/cgi-bin$ ./dobry_den_loc 
+Content-type: text/plain; charset=UTF-8
+
+
+Dobrý den! 
+xjurp20@4iz110:~/apache/cgi-bin$ :ls
+dobry_den_loc  printenv  test-cgi
+xjurp20@4iz110:~/apache/cgi-bin$ cd ..
+xjurp20@4iz110:~/apache$ ls
+bin    cgi-bin  error   icons    lib   man     modules
+build  conf     htdocs  include  logs  manual
+xjurp20@4iz110:~/apache$ cd htdocs/
+xjurp20@4iz110:~/apache/htdocs$ ls
+404.html  abc          htaccess    index.html.bak  log1.shtml  vhost
+404.jpg   favicon.ico  index.html  log0.shtml      perl
+xjurp20@4iz110:~/apache/htdocs$ mkdriir testy
+xjurp20@4iz110:~/apache/htdocs$ vi testy/odkaz.html
+"testy/odkaz.html" [New File]~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               0,0-1All-- INSERT --0,1All<1,2<b3bo4od5dy6y>72,1<2</3/b4bo5od6dy7y>81,72,1All<23 a4ah5hr6re765432<a34 h5hr6re7ef8f=9="f11fd210"http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc58c">60>d1do2ob3br4ry5y_6_d7de8en9n_70_l1lo2oc3c<4</5/a6a>71,7 1<body>2,1All121<2<h3hty54tm5ml6l>71<html>2,1All1<2<!3!d4do5oc6ct7ty8yp9pe101 h2ht3tm4ml5l>62,1All<2<h3he4ea54321
+<!doctype html>~                                                                               1,16All2,7 3,1All276l >7 l>8la>9an>10ng>1g=->3=>2=c>3=>2g>1g=>2="c>4cs>5s"f>7">63,1 <2<h3hea5ad6d>74,1All<2</3/h4he5ea6ad7d>85,76,878,1<2</3/h4ht5tm6ml7l>8765,74,83,74,1All<2<s3st4ty5yl6le7e>85,1All<2<?32</3/s4st5ty6yl7le8e>94,85,1Alla2a{5,3All{}5,4All3{d}4di}5is}6sp}7pa}8al}9a}8p}7s}6i}5d}4{}3{f}4fo}5on}6nt}7t-}8-s}9-}8t}7n}6o}5f}4{}3{d}4di}5is}6sp}7pl}8la}9ay}10y:}1: }2 i}3in}4nl}5li}6in}7ne}8e-}9-b}20bl}1lo}2oc}3ck}4k:}5k}4k;}5; }6 f}7fo}8on}9nt}30t-}1-s}2si}3iz}4ze}5e:}6: }7 2}82e}9em}40m;}1; }2 m}3ma}4ar}5rg}6gi}7in}8n:}9: }50 2}12e}2em}3m;}4; }5;}4a{}4,8 3,72,173,7 4,1All<2<m3me4et5ta67 c8ch9hr10ra109 hr109 ha10ar1rs2se3et4t=5=ü7-16üt8-17tf9-188-177-165   5,1Allf21
+<meta charset=~                                                                               4,15All5,1Allf21
+<meta charset=~                                                                               4,15All="f76"u7ut8tf9f=-21019f-20-915,1All
+<meta charset="utf-9~                                                                               4,21All0-818"f34323 /4/>55,1All<2<t3ti4it5tl6le7e>8>d9do10ob1br2ry3y_4_d5de6en7n_8_l9lo20oc1c<2<?32</3/t4ti5it6tl7le8e.9.>30298e>94,253,7 2,171,162,173,7 4,255,296,8 7,298,9 9,810,71,292,8 313,7All:x"testy/odkaz.html" [New] 13L, 274C written
+xjurp20@4iz110:~/apache/htdocs$ wget http://4iz110.vse.cz:40053/cgi-bin/dobry_de n_loc
+--2014-06-17 11:28:15--  http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+Resolving 4iz110.vse.cz (4iz110.vse.cz)... 127.0.1.1
+Connecting to 4iz110.vse.cz (4iz110.vse.cz)|127.0.1.1|:40053... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: `dobry_den_loc'
+
+    [<=>                                    ] 0           --.-K/s                  [ <=>                                   ] 14          --.-K/s   in 0s      
+
+2014-06-17 11:28:15 (1.22 MB/s) - `dobry_den_loc' saved [14]
+
+xjurp20@4iz110:~/apache/htdocs$ ls
+404.html  abc            favicon.ico  index.html      log0.shtml  perl   vhost
+404.jpg   dobry_den_loc  htaccess     index.html.bak  log1.shtml  testy
+xjurp20@4iz110:~/apache/htdocs$ rm dobry_den_loc 
+xjurp20@4iz110:~/apache/htdocs$ man cruurl
+curl(1)                           Curl Manual                          curl(1)
+
+NAME
+       curl - transfer a URL
+
+SYNOPSIS
+       curl [options] [URL...]
+
+DESCRIPTION
+       curl  is  a tool to transfer data from or to a server, using one of the
+       supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS,  IMAP,
+       IMAPS,  LDAP,  LDAPS,  POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS,
+       TELNET and TFTP).  The command is designed to work without user  inter
+       action.
+
+       curl offers a busload of useful tricks like proxy support, user authen
+       tication, FTP upload, HTTP post, SSL connections, cookies, file  trans
+       fer resume and more. As you will see below, the number of features will
+       make your head spin!
+
+       curl is powered by  libcurl  for  all  transfer-related  features.  See
+       libcurl(3) for details.
+
+ Manual page curl(1) line 1 (press h for help or q to quit) ESCESC[[66~~URL
+       The  URL  syntax is protocol-dependent. You'll find a detailed descrip
+       tion in RFC 3986.
+
+       You can specify multiple URLs or parts of URLs  by  writing  part  sets
+       within braces as in:
+
+        http://site.{one,two,three}.com
+
+       or you can get sequences of alphanumeric series by using [] as in:
+
+        ftp://ftp.numericals.com/file[1-100].txt
+        ftp://ftp.numericals.com/file[001-100].txt    (with leading zeros)
+        ftp://ftp.letters.com/file[a-z].txt
+
+       Nested  sequences  are not supported, but you can use several ones next
+       to each other:
+
+        http://any.org/archive[1996-1999]/vol[1-4]/part{a,b,c}.html
+
+       You can specify any amount of URLs on the command line.  They  will  be
+       fetched in a sequential manner in the specified order.
+
+ Manual page curl(1) line 26 (press h for help or q to quit) ESCESC[[44 Manual page curl(1) line 26 (press h for help or q to quit) Manual page curl(1) line 26 (press h for help or q to quit) ESCESC[[66~~       You  can  specify a step counter for the ranges to get every Nth number
+       or letter:
+
+        http://www.numericals.com/file[1-100:10].txt
+        http://www.letters.com/file[a-z:2].txt
+
+       If you specify URL without protocol:// prefix,  curl  will  attempt  to
+       guess  what  protocol  you might want. It will then default to HTTP but
+       try other protocols based on often-used host name prefixes.  For  exam
+       ple,  for  host names starting with "ftp." curl will assume you want to
+       speak FTP.
+
+       curl will do its best to use what you pass to it as a URL.  It  is  not
+       trying  to  validate it as a syntactically correct URL by any means but
+       is instead very liberal with what it accepts.
+
+       Curl will attempt to re-use connections for multiple file transfers, so
+       that  getting many files from the same server will not do multiple con
+       nects / handshakes. This improves speed. Of course this is only done on
+       files  specified  on  a  single command line and cannot be used between
+       separate curl invokes.
+
+PROGRESS METER
+ Manual page curl(1) line 49 (press h for help or q to quit) ESCESC[[66~~       curl normally displays a progress meter during  operations,  indicating
+       the  amount  of  transferred  data,  transfer speeds and estimated time
+       left, etc.
+
+       curl displays this data to the terminal by default, so  if  you  invoke
+       curl  to do an operation and it is about to write data to the terminal,
+       it disables the progress meter as otherwise it would mess up the output
+       mixing progress meter and response data.
+
+       If you want a progress meter for HTTP POST or PUT requests, you need to
+       redirect the response output to a file, using shell  redirect  (>),  -o
+       [file] or similar.
+
+       It  is not the same case for FTP upload as that operation does not spit
+       out any response data to the terminal.
+
+       If you prefer a progress "bar" instead of the regular meter, -# is your
+       friend.
+
+OPTIONS
+       In general, all boolean options are enabled with --option and yet again
+       disabled with --no-option. That is, you use the exact same option  name
+       but prefix it with "no-". However, in this list we mostly only list and
+ Manual page curl(1) line 72 (press h for help or q to quit) ESCESC[[66~~       show the --option version of them. (This concept with --no options  was
+       added  in  7.19.0.  Previously  most  options  were  toggled  on/off on
+       repeated use of the same command line option.)
+
+       -#, --progress-bar
+              Make curl display progress as a simple progress bar  instead  of
+              the standard, more informational, meter.
+
+       -0, --http1.0
+              (HTTP)  Forces curl to issue its requests using HTTP 1.0 instead
+              of using its internally preferred: HTTP 1.1.
+
+       -1, --tlsv1
+              (SSL) Forces curl to use TLS version 1 when negotiating  with  a
+              remote TLS server.
+
+       -2, --sslv2
+              (SSL)  Forces  curl to use SSL version 2 when negotiating with a
+              remote SSL server.
+
+       -3, --sslv3
+              (SSL) Forces curl to use SSL version 3 when negotiating  with  a
+              remote SSL server.
+ Manual page curl(1) line 95 (press h for help or q to quit) ESCESC[[66~~
+       -4, --ipv4
+              If  libcurl  is  capable  of resolving an address to multiple IP
+              versions (which it is if it is IPv6-capable), this option  tells
+              libcurl to resolve names to IPv4 addresses only.
+
+       -6, --ipv6
+              If  libcurl  is  capable  of resolving an address to multiple IP
+              versions (which it is if it is IPv6-capable), this option  tells
+              libcurl  to  resolve names to IPv6 addresses only.  default sta
+              tistics.
+
+       -a, --append
+              (FTP/SFTP) When used in an upload, this will tell curl to append
+              to  the  target  file  instead  of  overwriting  it. If the file
+              doesn't exist, it will be  created.   Note  that  this  flag  is
+              ignored by some SSH servers (including OpenSSH).
+
+       -A, --user-agent <agent string>
+              (HTTP) Specify the User-Agent string to send to the HTTP server.
+              Some  badly  done  CGIs  fail  if  this  field  isn't   set   to
+              "Mozilla/4.0".  To  encode  blanks  in  the string, surround the
+              string with single quote marks. This can also be  set  with  the
+ Manual page curl(1) line 118 (press h for help or q to quit) ESCESC[[55~~              remote SSL server.
+              (SSL) Forces curl to use SSL version 3 when negotiating  with  a
+       -3, --sslv3
+
+              remote SSL server.
+              (SSL)  Forces  curl to use SSL version 2 when negotiating with a
+       -2, --sslv2
+
+              remote TLS server.
+              (SSL) Forces curl to use TLS version 1 when negotiating  with  a
+       -1, --tlsv1
+
+              of using its internally preferred: HTTP 1.1.
+              (HTTP)  Forces curl to issue its requests using HTTP 1.0 instead
+       -0, --http1.0
+
+              the standard, more informational, meter.
+              Make curl display progress as a simple progress bar  instead  of
+       -#, --progress-bar
+
+       repeated use of the same command line option.)
+       added  in  7.19.0.  Previously  most  options  were  toggled  on/off on
+       show the --option version of them. (This concept with --no options  was
+ Manual page curl(1) line 95 (press h for help or q to quit) ESCESC[[55~~       but prefix it with "no-". However, in this list we mostly only list and
+       disabled with --no-option. That is, you use the exact same option  name
+       In general, all boolean options are enabled with --option and yet again
+OPTIONS
+
+       friend.
+       If you prefer a progress "bar" instead of the regular meter, -# is your
+
+       out any response data to the terminal.
+       It  is not the same case for FTP upload as that operation does not spit
+
+       [file] or similar.
+       redirect the response output to a file, using shell  redirect  (>),  -o
+       If you want a progress meter for HTTP POST or PUT requests, you need to
+
+       mixing progress meter and response data.
+       it disables the progress meter as otherwise it would mess up the output
+       curl  to do an operation and it is about to write data to the terminal,
+       curl displays this data to the terminal by default, so  if  you  invoke
+
+       left, etc.
+       the  amount  of  transferred  data,  transfer speeds and estimated time
+       curl normally displays a progress meter during  operations,  indicating
+ Manual page curl(1) line 72 (press h for help or q to quit) ESCESC[[66~~       show the --option version of them. (This concept with --no options  was
+       added  in  7.19.0.  Previously  most  options  were  toggled  on/off on
+       repeated use of the same command line option.)
+
+       -#, --progress-bar
+              Make curl display progress as a simple progress bar  instead  of
+              the standard, more informational, meter.
+
+       -0, --http1.0
+              (HTTP)  Forces curl to issue its requests using HTTP 1.0 instead
+              of using its internally preferred: HTTP 1.1.
+
+       -1, --tlsv1
+              (SSL) Forces curl to use TLS version 1 when negotiating  with  a
+              remote TLS server.
+
+       -2, --sslv2
+              (SSL)  Forces  curl to use SSL version 2 when negotiating with a
+              remote SSL server.
+
+       -3, --sslv3
+              (SSL) Forces curl to use SSL version 3 when negotiating  with  a
+              remote SSL server.
+ Manual page curl(1) line 95 (press h for help or q to quit) ESCESC[[66~~
+       -4, --ipv4
+              If  libcurl  is  capable  of resolving an address to multiple IP
+              versions (which it is if it is IPv6-capable), this option  tells
+              libcurl to resolve names to IPv4 addresses only.
+
+       -6, --ipv6
+              If  libcurl  is  capable  of resolving an address to multiple IP
+              versions (which it is if it is IPv6-capable), this option  tells
+              libcurl  to  resolve names to IPv6 addresses only.  default sta
+              tistics.
+
+       -a, --append
+              (FTP/SFTP) When used in an upload, this will tell curl to append
+              to  the  target  file  instead  of  overwriting  it. If the file
+              doesn't exist, it will be  created.   Note  that  this  flag  is
+              ignored by some SSH servers (including OpenSSH).
+
+       -A, --user-agent <agent string>
+              (HTTP) Specify the User-Agent string to send to the HTTP server.
+              Some  badly  done  CGIs  fail  if  this  field  isn't   set   to
+              "Mozilla/4.0".  To  encode  blanks  in  the string, surround the
+              string with single quote marks. This can also be  set  with  the
+ Manual page curl(1) line 118 (press h for help or q to quit) ESCESC[[66~~              -H, --header option of course.
+
+              If  this  option is set more than once, the last one will be the
+              one that's used.
+
+       --anyauth
+              (HTTP) Tells curl to figure out authentication method by itself,
+              and  use  the most secure one the remote site claims to support.
+              This is done by first doing a request and checking the response-
+              headers,  thus  possibly  inducing  an extra network round-trip.
+              This is  used  instead  of  setting  a  specific  authentication
+              method,  which  you  can  do with --basic, --digest, --ntlm, and
+              --negotiate.
+
+              Note that using --anyauth is not recommended if you  do  uploads
+              from  stdin, since it may require data to be sent twice and then
+              the client must be able to rewind. If the need should arise when
+              uploading from stdin, the upload operation will fail.
+
+       -b, --cookie <name=data>
+              (HTTP)  Pass the data to the HTTP server as a cookie. It is sup
+              posedly the data previously received from the server in a  "Set-
+              Cookie:"  line.  The data should be in the format "NAME1=VALUE1;
+ Manual page curl(1) line 141 (press h for help or q to quit) ESCESC[[66~~              NAME2=VALUE2".
+
+              If no '=' symbol is used in the line, it is treated as  a  file
+              name  to  use to read previously stored cookie lines from, which
+              should be used in this session if they match. Using this  method
+              also  activates  the "cookie parser" which will make curl record
+              incoming cookies too, which may be handy if you're using this in
+              combination  with  the -L, --location option. The file format of
+              the file to read cookies from should be plain  HTTP  headers  or
+              the Netscape/Mozilla cookie file format.
+
+              NOTE  that  the file specified with -b, --cookie is only used as
+              input. No cookies will be stored in the file. To store  cookies,
+              use  the -c, --cookie-jar option or you could even save the HTTP
+              headers to a file using -D, --dump-header!
+
+              If this option is set more than once, the last one will  be  the
+              one that's used.
+
+       -B, --use-ascii
+              Enable  ASCII transfer when using FTP or LDAP. For FTP, this can
+              also be enforced by using an URL that ends with ";type=A".  This
+              option  causes  data sent to stdout to be in text mode for win32
+ Manual page curl(1) line 164 (press h for help or q to quit) ESCESC[[66~~              systems.
+
+       --basic
+              (HTTP) Tells curl to use HTTP Basic authentication. This is  the
+              default  and this option is usually pointless, unless you use it
+              to override a  previously  set  option  that  sets  a  different
+              authentication  method  (such  as --ntlm, --digest, or --negoti
+              ate).
+
+       -c, --cookie-jar <file name>
+              Specify to which file you want curl to write all cookies after a
+              completed  operation.  Curl  writes  all cookies previously read
+              from a specified file as  well  as  all  cookies  received  from
+              remote server(s). If no cookies are known, no file will be writ
+              ten. The file will be written using  the  Netscape  cookie  file
+              format.  If  you  set  the  file name to a single dash, "-", the
+              cookies will be written to stdout.
+
+              This command line option will activate the  cookie  engine  that
+              makes curl record and use cookies. Another way to activate it is
+              to use the -b, --cookie option.
+
+              If the cookie jar can't be created or written to, the whole curl
+ Manual page curl(1) line 187 (press h for help or q to quit) ESCESC[[66~~              operation  won't  fail or even report an error clearly. Using -v
+              will get a warning displayed, but that is the only visible feed
+              back you get about this possibly lethal situation.
+
+              If  this  option  is used several times, the last specified file
+              name will be used.
+
+       -C, --continue-at <offset>
+              Continue/Resume a previous file transfer at  the  given  offset.
+              The  given  offset  is  the  exact  number of bytes that will be
+              skipped, counting from the beginning of the source  file  before
+              it is transferred to the destination.  If used with uploads, the
+              FTP server command SIZE will not be used by curl.
+
+              Use "-C -" to tell curl to automatically find out  where/how  to
+              resume  the  transfer. It then uses the given output/input files
+              to figure that out.
+
+              If this option is used several times, the last one will be used.
+
+       --ciphers <list of ciphers>
+              (SSL) Specifies which ciphers to use in the connection. The list
+              of  ciphers  must  specify  valid ciphers. Read up on SSL cipher
+ Manual page curl(1) line 210 (press h for help or q to quit) ESCESC[[66~~              list          details           on           this           URL:
+              http://www.openssl.org/docs/apps/ciphers.html
+
+              NSS  ciphers  are  done differently than OpenSSL and GnuTLS. The
+              full list of NSS ciphers is in the NSSCipherSuite entry at  this
+              URL: http://directory.fedora.redhat.com/docs/mod_nss.html#Direc
+              tives
+
+              If this option is used several times, the last one will override
+              the others.
+
+       --compressed
+              (HTTP) Request a compressed response using one of the algorithms
+              libcurl supports, and save the uncompressed document.   If  this
+              option  is  used  and  the server sends an unsupported encoding,
+              curl will report an error.
+
+       --connect-timeout <seconds>
+              Maximum time in seconds that you allow  the  connection  to  the
+              server  to  take.   This  only limits the connection phase, once
+              curl has connected this option is of no more use. See  also  the
+              -m, --max-time option.
+
+ Manual page curl(1) line 233 (press h for help or q to quit) ESCESC[[66~~              If this option is used several times, the last one will be used.
+
+       --create-dirs
+              When  used  in  conjunction with the -o option, curl will create
+              the necessary local directory hierarchy as needed.  This  option
+              creates  the dirs mentioned with the -o option, nothing else. If
+              the -o file name uses no dir or if the dirs it mentions  already
+              exist, no dir will be created.
+
+              To  create remote directories when using FTP or SFTP, try --ftp-
+              create-dirs.
+
+       --crlf (FTP) Convert LF to CRLF in upload. Useful for MVS (OS/390).
+
+       --crlfile <file>
+              (HTTPS/FTPS) Provide a file using PEM format with a  Certificate
+              Revocation  List  that may specify peer certificates that are to
+              be considered revoked.
+
+              If this option is used several times, the last one will be used.
+
+              (Added in 7.19.7)
+
+ Manual page curl(1) line 256 (press h for help or q to quit) ESCESC[[66~~       -d, --data <data>
+              (HTTP) Sends the specified data in a POST request  to  the  HTTP
+              server,  in  the  same  way  that a browser does when a user has
+              filled in an HTML form and presses the submit button. This  will
+              cause curl to pass the data to the server using the content-type
+              application/x-www-form-urlencoded.  Compare to -F, --form.
+
+              -d, --data is the same as  --data-ascii.  To  post  data  purely
+              binary, you should instead use the --data-binary option. To URL-
+              encode the value of a form field you may use --data-urlencode.
+
+              If any of these options is used more than once on the same  com
+              mand  line,  the  data  pieces specified will be merged together
+              with a separating  &-symbol.  Thus,  using  '-d  name=daniel  -d
+              skill=lousy'  would  generate  a  post  chunk  that  looks  like
+              'name=daniel&skill=lousy'.
+
+              If you start the data with the letter @, the rest  should  be  a
+              file  name  to read the data from, or - if you want curl to read
+              the data from stdin.  The contents of the file must  already  be
+              URL-encoded.  Multiple files can also be specified. Posting data
+              from a file named 'foobar' would thus be done with --data  @foo
+              bar.
+ Manual page curl(1) line 279 (press h for help or q to quit) ESCESC[[66~~
+       -D, --dump-header <file>
+              Write the protocol headers to the specified file.
+
+              This  option  is handy to use when you want to store the headers
+              that a HTTP site sends to you. Cookies from  the  headers  could
+              then  be  read  in  a  second  curl  invocation by using the -b,
+              --cookie option! The -c, --cookie-jar option is however a better
+              way to store cookies.
+
+              When  used  in FTP, the FTP server response lines are considered
+              being "headers" and thus are saved there.
+
+              If this option is used several times, the last one will be used.
+              IP "--data-ascii <data>" See -d, --data.
+
+       --data-binary <data>
+              (HTTP)  This  posts data exactly as specified with no extra pro
+              cessing whatsoever.
+
+              If you start the data with the letter @, the rest  should  be  a
+              filename.   Data  is  posted in a similar manner as --data-ascii
+              does, except that newlines are  preserved  and  conversions  are
+ Manual page curl(1) line 302 (press h for help or q to quit) ESCESC[[66~~              never done.
+
+              If  this  option  is  used several times, the ones following the
+              first will append data as described in -d, --data.
+
+       --data-urlencode <data>
+              (HTTP) This posts data, similar to the other --data options with
+              the exception that this performs URL-encoding. (Added in 7.18.0)
+
+              To  be  CGI-compliant,  the <data> part should begin with a name
+              followed by a separator and a content specification. The  <data>
+              part can be passed to curl using one of the following syntaxes:
+
+              content
+                     This  will make curl URL-encode the content and pass that
+                     on. Just be careful so that the content  doesn't  contain
+                     any  =  or  @  symbols, as that will then make the syntax
+                     match one of the other cases below!
+
+              =content
+                     This will make curl URL-encode the content and pass  that
+                     on. The preceding = symbol is not included in the data.
+
+ Manual page curl(1) line 325 (press h for help or q to quit) ESCESC[[66~~              name=content
+                     This  will make curl URL-encode the content part and pass
+                     that on. Note that the name part is expected to  be  URL-
+                     encoded already.
+
+              @filename
+                     This  will  make  curl  load  data  from  the  given file
+                     (including any newlines), URL-encode that data  and  pass
+                     it on in the POST.
+
+              name@filename
+                     This  will  make  curl  load  data  from  the  given file
+                     (including any newlines), URL-encode that data  and  pass
+                     it  on  in  the  POST.  The  name part gets an equal sign
+                     appended, resulting in name=urlencoded-file-content. Note
+                     that the name is expected to be URL-encoded already.
+
+       --delegation LEVEL
+              Set LEVEL to tell the server what it is allowed to delegate when
+              it comes to user credentials. Used with GSS/kerberos.
+
+              none   Don't allow any delegation.
+
+ Manual page curl(1) line 348 (press h for help or q to quit) ESCESC[[66~~              policy Delegates if and only if the OK-AS-DELEGATE flag  is  set
+                     in  the  Kerberos  service  ticket,  which is a matter of
+                     realm policy.
+
+              always Unconditionally allow the server to delegate.
+
+       --digest
+              (HTTP) Enables HTTP Digest authentication. This is a authentica
+              tion that prevents the password from being sent over the wire in
+              clear text. Use this in combination with the normal  -u,  --user
+              option to set user name and password. See also --ntlm, --negoti
+              ate and --anyauth for related options.
+
+              If this option is used several times, the following  occurrences
+              make no difference.
+
+       --disable-eprt
+              (FTP) Tell curl to disable the use of the EPRT and LPRT commands
+              when doing active FTP transfers. Curl will normally always first
+              attempt  to use EPRT, then LPRT before using PORT, but with this
+              option, it will use PORT right away. EPRT and  LPRT  are  exten
+              sions  to  the  original  FTP  protocol, and may not work on all
+              servers, but they enable more functionality in a better way than
+ Manual page curl(1) line 371 (press h for help or q to quit) ESCESC[[66~~              the traditional PORT command.
+
+              --eprt can be used to explicitly enable EPRT again and --no-eprt
+              is an alias for --disable-eprt.
+
+              Disabling EPRT only changes the active behavior. If you want  to
+              switch  to  passive  mode  you need to not use -P, --ftp-port or
+              force it with --ftp-pasv.
+
+       --disable-epsv
+              (FTP) Tell curl to disable the use  of  the  EPSV  command  when
+              doing  passive  FTP  transfers.  Curl will normally always first
+              attempt to use EPSV before PASV, but with this option,  it  will
+              not try using EPSV.
+
+              --epsv can be used to explicitly enable EPSV again and --no-epsv
+              is an alias for --disable-epsv.
+
+              Disabling EPSV only changes the passive behavior. If you want to
+              switch to active mode you need to use -P, --ftp-port.
+
+       -e, --referer <URL>
+              (HTTP)  Sends the "Referer Page" information to the HTTP server.
+ Manual page curl(1) line 394 (press h for help or q to quit) ESCESC[[66~~              This can also be set with the -H, --header flag of course.  When
+              used with -L, --location you can append ";auto" to the --referer
+              URL to make curl automatically set the previous URL when it fol
+              lows  a  Location: header. The ";auto" string can be used alone,
+              even if you don't set an initial --referer.
+
+              If this option is used several times, the last one will be used.
+
+       -E, --cert <certificate[:password]>
+              (SSL) Tells curl to use the specified  client  certificate  file
+              when getting a file with HTTPS, FTPS or another SSL-based proto
+              col. The certificate must be in PEM  format.   If  the  optional
+              password  isn't  specified, it will be queried for on the termi
+              nal. Note that this option assumes a "certificate" file that  is
+              the  private  key  and the private certificate concatenated! See
+              --cert and --key to specify them independently.
+
+              If curl is built against the NSS SSL library  then  this  option
+              can  tell curl the nickname of the certificate to use within the
+              NSS database defined by the environment variable SSL_DIR (or  by
+              default  /etc/pki/nssdb).  If  the  NSS PEM PKCS#11 module (lib
+              nsspem.so) is available then PEM files may  be  loaded.  If  you
+              want to use a file from the current directory, please precede it
+ Manual page curl(1) line 417 (press h for help or q to quit) ESCESC[[66~~              with "./" prefix, in order to avoid confusion with a nickname.
+
+              If this option is used several times, the last one will be used.
+
+       --engine <name>
+              Select the OpenSSL crypto engine to use for  cipher  operations.
+              Use  --engine  list  to  print  a  list  of build-time supported
+              engines. Note that not all (or  none)  of  the  engines  may  be
+              available at run-time.
+
+       --environment
+              (RISC  OS ONLY) Sets a range of environment variables, using the
+              names the -w option supports, to allow easier extraction of use
+              ful information after having run curl.
+
+       --egd-file <file>
+              (SSL)  Specify  the  path  name  to the Entropy Gathering Daemon
+              socket. The socket is used to seed the  random  engine  for  SSL
+              connections. See also the --random-file option.
+
+       --cert-type <type>
+              (SSL)  Tells curl what certificate type the provided certificate
+              is in. PEM, DER and ENG are recognized types.  If not specified,
+ Manual page curl(1) line 440 (press h for help or q to quit) ESCESC[[66~~              PEM is assumed.
+
+              If this option is used several times, the last one will be used.
+
+       --cacert <CA certificate>
+              (SSL) Tells curl to use the specified certificate file to verify
+              the peer. The file may contain  multiple  CA  certificates.  The
+              certificate(s)  must be in PEM format. Normally curl is built to
+              use a default file for this, so this option is typically used to
+              alter that default file.
+
+              curl  recognizes the environment variable named 'CURL_CA_BUNDLE'
+              if it is set, and uses the given path as a path  to  a  CA  cert
+              bundle. This option overrides that variable.
+
+              The  windows  version  of  curl will automatically look for a CA
+              certs file named ´curl-ca-bundle.crt´, either in the same direc
+              tory as curl.exe, or in the Current Working Directory, or in any
+              folder along your PATH.
+
+              If curl is built against the NSS SSL library  then  this  option
+              tells  curl the nickname of the CA certificate to use within the
+              NSS database defined by the environment variable SSL_DIR (or  by
+ Manual page curl(1) line 463 (press h for help or q to quit) ESCESC[[66~~              default  /etc/pki/nssdb).   If  the NSS PEM PKCS#11 module (lib
+              nsspem.so) is available then PEM files may be loaded.
+
+              If this option is used several times, the last one will be used.
+
+       --capath <CA certificate directory>
+              (SSL) Tells curl to use the specified certificate  directory  to
+              verify  the  peer.  Multiple paths can be provided by separating
+              them with ":" (e.g.  "path1:path2:path3"). The certificates must
+              be  in  PEM  format,  and  if curl is built against OpenSSL, the
+              directory must have been processed using  the  c_rehash  utility
+              supplied  with OpenSSL. Using --capath can allow OpenSSL-powered
+              curl to make SSL-connections much more  efficiently  than  using
+              --cacert if the --cacert file contains many CA certificates.
+
+              If this option is set, the default capath value will be ignored,
+              and if it is used several times, the last one will be used.
+
+       -f, --fail
+              (HTTP) Fail silently (no output at all) on server  errors.  This
+              is  mostly done to better enable scripts etc to better deal with
+              failed attempts. In normal cases when a  HTTP  server  fails  to
+              deliver  a  document,  it  returns  an  HTML document stating so
+ Manual page curl(1) line 486 (press h for help or q to quit) ESCESC[[66~~              (which often also describes why and more). This flag  will  pre
+              vent curl from outputting that and return error 22.
+
+              This  method is not fail-safe and there are occasions where non-
+              successful response codes will  slip  through,  especially  when
+              authentication is involved (response codes 401 and 407).
+
+       -F, --form <name=content>
+              (HTTP)  This  lets curl emulate a filled-in form in which a user
+              has pressed the submit button. This causes  curl  to  POST  data
+              using  the  Content-Type  multipart/form-data  according  to RFC
+              2388. This enables uploading of binary files etc. To  force  the
+              'content'  part  to  be  a  file, prefix the file name with an @
+              sign. To just get the content part from a file, prefix the  file
+              name  with  the symbol <. The difference between @ and < is then
+              that @ makes a file get attached in the post as a  file  upload,
+              while  the  <  makes  a text field and just get the contents for
+              that text field from a file.
+
+              Example, to send your password file to the server, where  'pass
+              word' is the name of the form-field to which /etc/passwd will be
+              the input:
+
+ Manual page curl(1) line 509 (press h for help or q to quit) ESCESC[[66~~              curl -F password=@/etc/passwd www.mypasswords.com
+
+              To read content from stdin instead of a file, use - as the file
+              name. This goes for both @ and < constructs.
+
+              You  can  also  tell  curl  what  Content-Type  to  use by using
+              'type=', in a manner similar to:
+
+              curl -F "web=@index.html;type=text/html" url.com
+
+              or
+
+              curl -F "name=daniel;type=text/foo" url.com
+
+              You can also explicitly change the name field of a  file  upload
+              part by setting filename=, like this:
+
+              curl -F "file=@localfile;filename=nameinpost" url.com
+
+              See further examples and details in the MANUAL.
+
+              This option can be used multiple times.
+
+ Manual page curl(1) line 532 (press h for help or q to quit) ESCESCOOAA
+ Manual page curl(1) line 531 (press h for help or q to quit) ESCESCOOAA              the input:
+ Manual page curl(1) line 530 (press h for help or q to quit) ESCESCOOAA              word' is the name of the form-field to which /etc/passwd will be
+ Manual page curl(1) line 529 (press h for help or q to quit) ESCESCOOAA              Example, to send your password file to the server, where  'pass
+ Manual page curl(1) line 528 (press h for help or q to quit) ESCESCOOAA
+ Manual page curl(1) line 527 (press h for help or q to quit) ESCESCOOAA              that text field from a file.
+ Manual page curl(1) line 526 (press h for help or q to quit) ESCESCOOAA              while  the  <  makes  a text field and just get the contents for
+ Manual page curl(1) line 525 (press h for help or q to quit) ESCESCOOAA              that @ makes a file get attached in the post as a  file  upload,
+ Manual page curl(1) line 524 (press h for help or q to quit) ESCESCOOAA              name  with  the symbol <. The difference between @ and < is then
+ Manual page curl(1) line 523 (press h for help or q to quit)              You can also explicitly change the name field of a  file  upload
+ Manual page curl(1) line 524 (press h for help or q to quit)/oottuuuuttppuutt              that @ makes a file get attached in the post as a  file  upload,
+              while  the  <  makes  a text field and just get the contents for
+              that text field from a file.
+
+              Example, to send your password file to the server, where  'pass
+              word' is the name of the form-field to which /etc/passwd will be
+              the input:
+
+              curl -F password=@/etc/passwd www.mypasswords.com
+
+              To read content from stdin instead of a file, use - as the file
+              name. This goes for both @ and < constructs.
+
+              You  can  also  tell  curl  what  Content-Type  to  use by using
+              'type=', in a manner similar to:
+
+              curl -F "web=@index.html;type=text/html" url.com
+
+              or
+
+              curl -F "name=daniel;type=text/foo" url.com
+
+              You can also explicitly change the name field of a  file  upload
+              that @ makes a file get attached in the post as a  file  upload,
+              while  the  <  makes  a text field and just get the contents for
+              that text field from a file.
+
+              Example, to send your password file to the server, where  'pass
+              word' is the name of the form-field to which /etc/passwd will be
+              the input:
+
+              curl -F password=@/etc/passwd www.mypasswords.com
+
+              To read content from stdin instead of a file, use - as the file
+              name. This goes for both @ and < constructs.
+
+              You  can  also  tell  curl  what  Content-Type  to  use by using
+              'type=', in a manner similar to:
+
+              curl -F "web=@index.html;type=text/html" url.com
+
+              or
+
+              curl -F "name=daniel;type=text/foo" url.com
+
+              You can also explicitly change the name field of a  file  upload
+...skipping...
+              (HTTP)  Include  the  HTTP-header in the output. The HTTP-header
+              includes things like server-name, date of  the  document,  HTTP-
+              version and more...
+
+       -I, --head
+              (HTTP/FTP/FILE) Fetch the HTTP-header only! HTTP-servers feature
+              the command HEAD which this uses to get nothing but  the  header
+              of  a  document.  When used on a FTP or FILE file, curl displays
+              the file size and last modification time only.
+
+       --interface <name>
+              Perform an operation using a specified interface. You can  enter
+              interface  name,  IP address or host name. An example could look
+              like:
+
+               curl --interface eth0:1 http://www.netscape.com/
+
+              If this option is used several times, the last one will be used.
+
+       -j, --junk-session-cookies
+              (HTTP) When curl is told to read cookies from a given file, this
+              option  will  make  it  discard all "session cookies". This will
+              basically have the same effect as if a new session  is  started.
+ Manual page curl(1) line 713 (press h for help or q to quit) ESCESCOOAA       -i, --include
+ Manual page curl(1) line 712 (press h for help or q to quit)/              basically have the same effect as if a new session  is  started.
+ Manual page curl(1) line 713 (press h for help or q to quit)/...skipping...
+              output = "curlhere.html"
+              user-agent = "superagent/1.0"
+
+              # and fetch another URL too
+              url = "curl.haxx.se/docs/manpage.html"
+              -O
+              referer = "http://nowhereatall.com/"
+              # --- End of example file ---
+
+              This  option  can be used multiple times to load multiple config
+              files.
+
+       --keepalive-time <seconds>
+              This option sets the time a  connection  needs  to  remain  idle
+              before  sending keepalive probes and the time between individual
+              keepalive probes. It is currently effective on operating systems
+              offering  the  TCP_KEEPIDLE  and  TCP_KEEPINTVL  socket  options
+              (meaning Linux, recent AIX, HP-UX and more). This option has  no
+              effect if --no-keepalive is used. (Added in 7.18.0)
+
+              If  this option is used multiple times, the last occurrence sets
+              the amount. If unspecified, the option defaults to 60 seconds.
+
+ Manual page curl(1) line 802 (press h for help or q to quit)/...skipping...
+              Disables the buffering of the output stream. In normal work sit
+              uations,  curl  will  use a standard buffered output stream that
+              will have the effect that it will output the data in chunks, not
+              necessarily  exactly  when  the data arrives.  Using this option
+              will disable that buffering.
+
+              Note that this is the negated option name  documented.  You  can
+              thus use --buffer to enforce the buffering.
+
+       --netrc-file
+              This  option  is similar to --netrc, except that you provide the
+              path (absolute or relative) to the netrc file that  Curl  should
+              use.   You  can  only  specify one netrc file per invocation. If
+              several --netrc-file options are provided,  only  the  last  one
+              will be used.  (Added in 7.21.5)
+
+              This  option  overrides  any use of --netrc as they are mutually
+              exclusive.  It will also abide by --netrc-optional if specified.
+
+       --netrc-optional
+              Very similar to --netrc, but this option makes the .netrc  usage
+              optional and not mandatory as the --netrc option does.
+
+ Manual page curl(1) line 985 (press h for help or q to quit)/       --negotiate
+ Manual page curl(1) line 986 (press h for help or q to quit)/              (HTTP)  Enables  GSS-Negotiate authentication. The GSS-Negotiate
+ Manual page curl(1) line 987 (press h for help or q to quit)/...skipping...
+       -o, --output <file>
+              Write output to <file> instead of stdout. If you are using {} or
+              []  to  fetch  multiple documents, you can use '#' followed by a
+              number in the <file> specifier. That variable will  be  replaced
+              with the current string for the URL being fetched. Like in:
+
+                curl http://{one,two}.site.com -o "file_#1.txt"
+
+              or use several variables like:
+
+                curl http://{site,host}.host[1-5].com -o "#1_#2"
+
+              You  may use this option as many times as the number of URLs you
+              have.
+
+              See also the --create-dirs option to create the  local  directo
+              ries  dynamically.  Specifying the output as '-' (a single dash)
+              will force the output to be done to stdout.
+
+       -O, --remote-name
+              Write output to a local file named like the remote file we  get.
+              (Only  the file part of the remote file is used, the path is cut
+              off.)
+ Manual page curl(1) line 1077 (press h for help or q to quit)/
+ Manual page curl(1) line 1078 (press h for help or q to quit) ESCESCOOAA       -o, --output <file>
+ Manual page curl(1) line 1077 (press h for help or q to quit) ESCESCOOAA
+ Manual page curl(1) line 1076 (press h for help or q to quit) ::qqxjurp20@4iz110:~/apache/htdocs$ curl http://4iz110.vse.cz:40053/cgi-bin/dobry_de n_loc
+
+Dobrý den! 
+xjurp20@4iz110:~/apache/htdocs$ curl http://4iz110.vse.cz:40053/cgi-bin/dobry_denn_loc-http://4iz110.vse.cz:40053/cgi-bin/dobry_den_locxjurp20@4iz110:~/apache/htdocs$ dhttp://4iz110.vse.cz:40053/cgi-bin/dobry_den_locxjurp20@4iz110:~/apache/htdocs$ http://4iz110.vse.cz:40053/cgi-bin/dobry_den_locxjurp20@4iz110:~/apache/htdocs$ vhttp://4iz110.vse.cz:40053/cgi-bin/dobry_den_locxjurp20@4iz110:~/apache/htdocs$  http://4iz110.vse.cz:40053/cgi-bin/dobry_den_locxjurp20@4iz110:~/apache/htdocs$ 
+
+* About to connect() to 4iz110.vse.cz port 40053 (#0)
+*   Trying 127.0.1.1...
+* connected
+* Connected to 4iz110.vse.cz (127.0.1.1) port 40053 (#0)
+> GET /cgi-bin/dobry_den_loc HTTP/1.1
+> User-Agent: curl/7.26.0
+> Host: 4iz110.vse.cz:40053
+> Accept: */*
+> 
+* additional stuff not fine transfer.c:1037: 0 0
+* HTTP 1.1 or later with persistent connection, pipelining supported
+< HTTP/1.1 200 OK
+< Date: Tue, 17 Jun 2014 09:29:39 GMT
+< Server: Apache/2.2.14 (Unix)
+< Transfer-Encoding: chunked
+< Content-Type: text/plain; charset=UTF-8
+< 
+
+Dobrý den! 
+* Connection #0 to host 4iz110.vse.cz left intact
+* Closing connection #0
+xjurp20@4iz110:~/apache/htdocs$ cd ..
+xjurp20@4iz110:~/apache$ ls
+bin    cgi-bin  error   icons    lib   man     modules
+build  conf     htdocs  include  logs  manual
+xjurp20@4iz110:~/apache$ cvi cgi-bin/dobry_den_loc 
+"cgi-bin/dobry_den_loc" [converted] 14L, 223C#!/usr/bin/perl
+##
+## 8.1.2011 JednoduchÃ½ CGI skript - uloÅ¾it na jinÃ©m serveru.
+## .4.2008 - pùvodnì: /usr/local/bin/perl.
+
+print "Content-type: text/plain; charset=UTF-8\n\n";
+
+print "\nDobrÃ½ den! \n";~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               1,1All-- INSERT --2,1Topntent-type: text/plain; charset=UTF-8\n\n";2,44All2,43All:q!xjurp20@4iz110:~/apache$ exit
+logout

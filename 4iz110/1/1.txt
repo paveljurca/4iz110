@@ -1,0 +1,59 @@
+http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+
+> stahnuto z FTP
+> presunuto do adresare /home/xjurp20/apache/cgi-bin/
+> pridan execute bit: chmod +x dobry_den_loc
+> ve skriptu upravena cesta k perl interpretru na /usr/bin/perl
+
+> vytvoren adresar /htdocs/testy/
+> v adresari vytvoren html soubor jako odkaz na http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+
+> server oznamuje, ze se jedna o obycejny textovy soubor (klienta nezajima, ze jde o vystup ze skriptu)
+
+----------------------------------------------
+< Content-Type: text/plain; charset=UTF-8
+----------------------------------------------
+
+xjurp20@4iz110:~/apache/htdocs$ curl http://4iz110.vse.cz:40053/cgi-bin/dobry_den
+n_loc
+-http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+xjurp20@4iz110:~/apache/htdocs$ dhttp://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+xjurp20@4iz110:~/apache/htdocs$ http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+xjurp20@4iz110:~/apache/htdocs$ vhttp://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+xjurp20@4iz110:~/apache/htdocs$  http://4iz110.vse.cz:40053/cgi-bin/dobry_den_loc
+xjurp20@4iz110:~/apache/htdocs$ 
+
+
+* About to connect() to 4iz110.vse.cz port 40053 (#0)
+*   Trying 127.0.1.1...
+* connected
+* Connected to 4iz110.vse.cz (127.0.1.1) port 40053 (#0)
+> GET /cgi-bin/dobry_den_loc HTTP/1.1
+
+> User-Agent: curl/7.26.0
+
+> Host: 4iz110.vse.cz:40053
+
+> Accept: */*
+
+> 
+
+* additional stuff not fine transfer.c:1037: 0 0
+* HTTP 1.1 or later with persistent connection, pipelining supported
+< HTTP/1.1 200 OK
+
+< Date: Tue, 17 Jun 2014 09:29:39 GMT
+
+< Server: Apache/2.2.14 (Unix)
+
+< Transfer-Encoding: chunked
+
+< Content-Type: text/plain; charset=UTF-8
+
+< 
+
+
+Dobrý den! 
+* Connection #0 to host 4iz110.vse.cz left intact
+* Closing connection #0
+xjurp20@4iz110:~/apache/htdocs$ 
